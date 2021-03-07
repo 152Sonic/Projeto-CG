@@ -45,11 +45,6 @@ void renderScene(void) {
 		0.0f, 1.0f, 0.0f);
 
 	// put the geometric transformations here
-	glRotatef(ax, 1, 0, 0);
-	glRotatef(ay, 0, 1, 0);
-	glRotatef(az, 0, 0, 1);
-
-	glTranslatef(cx, cy, cz);
 	// put drawing instructions here
 
 
@@ -79,7 +74,6 @@ int main(int argc, char** argv) {
 
 
 	// put here the registration of the keyboard callbacks
-	glutKeyboardFunc(translate);
 
 
 	//  OpenGL settings

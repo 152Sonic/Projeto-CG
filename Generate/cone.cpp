@@ -8,7 +8,7 @@ void cone(double raio, double h, double divb, double divh, string nome) {
     double espch = h / divh;
     double alt = -(h / 2);
 
-    for (int i = 0; i < 2 * M_PI; i += angle) {
+    for (float i = 0; i < 2 * M_PI; i += angle) {
 
         float x1 = 0;
         float y1 = alt;
@@ -29,12 +29,12 @@ void cone(double raio, double h, double divb, double divh, string nome) {
 
     for (int i = 0; i < divh; i++) {
 
-        for (int j = 0; j < divb; j+= angle) {
+        for (float j = 0; j < divb; j+= angle) {
 
 
             float x5 = (raio - (raio*i)/divh) * sin(j);
             float y5 = alt + i*espch;
-            float z5 = raio * cos(j);
+            float z5 = (raio - (raio * i) / divh)* cos(j);
 
             float x4 = (raio - (raio * (i + 1)) / divh) * sin(j);
             float y4 = alt + (i + 1) * espch;

@@ -1,0 +1,6 @@
+# ninja log v5
+32	1888	637123789	CMakeFiles/Projeto_CG.dir/Generate/generate.cpp.obj	d10b433c8e7a8ffb
+51	1982	637123789	CMakeFiles/Projeto_CG.dir/Generate/plano.cpp.obj	80f0935197a8a02c
+66	1996	637123789	CMakeFiles/Projeto_CG.dir/Generate/cone.cpp.obj	25ccb583439d4cb0
+79	2021	637123790	CMakeFiles/Projeto_CG.dir/Generate/sphere.cpp.obj	90a2ebbdd8e5bcd9
+1	2092	637123790	CMakeFiles/Projeto_CG.dir/Generate/box.cpp.obj	5edec1b29080e4a7

@@ -1,0 +1,10 @@
+^C:\USERS\KIKOC\DESKTOP\UNIVERSIDADE\CG\PROJETO\PROJETO-CG\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kikoc/Desktop/Universidade/CG/Projeto/Projeto-CG -BC:/Users/kikoc/Desktop/Universidade/CG/Projeto/Projeto-CG/build --check-stamp-file C:/Users/kikoc/Desktop/Universidade/CG/Projeto/Projeto-CG/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

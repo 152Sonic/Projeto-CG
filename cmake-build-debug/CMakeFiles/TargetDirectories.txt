@@ -1,4 +1,4 @@
+/Users/maria/Documentos/3ano/2Semestre/CG/Projeto-CG/cmake-build-debug/CMakeFiles/Engine.dir
 /Users/maria/Documentos/3ano/2Semestre/CG/Projeto-CG/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/maria/Documentos/3ano/2Semestre/CG/Projeto-CG/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/maria/Documentos/3ano/2Semestre/CG/Projeto-CG/cmake-build-debug/CMakeFiles/Engine.dir
-/Users/maria/Documentos/3ano/2Semestre/CG/Projeto-CG/cmake-build-debug/CMakeFiles/Generate.dir
+/Users/maria/Documentos/3ano/2Semestre/CG/Projeto-CG/cmake-build-debug/CMakeFiles/Generator.dir

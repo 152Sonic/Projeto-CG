@@ -1,35 +1,35 @@
-
-#include <stdlib.h>
 #ifdef __APPLE__
 #include <GLUT/glut.h>
 #else
 #include <GL/glut.h>
 #endif
 #include <iostream>
-#include <fstream>
 #include <cmath>
 #include <string>
 #include "tinyxml2.h"
 #include "Ponto.h"
-#include "Shape.h"
+
 
 using namespace tinyxml2;
 using namespace std;
 
 
-Shape shape;
+//Shape shape;
 int linha = GL_LINE;
 float alpha = 0.61547999;
 float beta = 0.61547999;
 float rad = 10;
 
-void lerFile(char* FILENAME) {
-    ifstream file(FILENAME);
-    if (file.is_open()) {
-        std::string line;
+vector<Ponto> shape;
+
+void readFile(string fich) {
+    ifstream file;
+    file.open(fich.c_str());
+    if (file.is_open()){
+        string line;
         while (getline(file, line)) {
             Ponto p = Ponto(line);
-            shape.inserePonto(p);
+            shape.push_back(p);
         }
         file.close();
     }
@@ -38,20 +38,19 @@ void lerFile(char* FILENAME) {
     }
 }
 
-void lerXML(char * path){
-    XMLDocument doc;
-    XMLElement *element;
-    tinyxml2::XMLError eResult = doc.LoadFile(path);// path2
-    if(!eResult){
-        element = doc.FirstChildElement()->FirstChildElement(); //<scene><model>
-        for (; element; element = element->NextSiblingElement()) { // itera por os model
-            string ficheiro = element->Attribute("file"); // pega no valor do atributo file  em cada  Model
-            char * aux = const_cast<char *>(ficheiro.c_str());
-            lerFile(aux); // Gets model's vertexes
+void lerXML(string ficheiro) {
+    XMLDocument docxml;
+
+    if (!(docxml.LoadFile(ficheiro.c_str()))) {
+        XMLElement* root = docxml.FirstChildElement();
+        for(XMLElement *elemento = root -> FirstChildElement();elemento != NULL; elemento = elemento -> NextSiblingElement()){
+            string fich = elemento -> Attribute("file");
+            cout << "Ficheiro: " << fich << " lido com sucesso " << endl;
+            readFile(fich);
         }
     }
     else {
-        cout << "o ficheiro nao foi carregado" << endl;
+        cout << "Ficheiro XML não foi encontrado" << endl;
     }
 }
 
@@ -93,16 +92,31 @@ void renderScene(void) {
 		0.0, 0.0, 0.0,
 		0.0f, 1.0f, 0.0f);
 
-    glPolygonMode(GL_FRONT,linha);
+    glPolygonMode(GL_FRONT,GL_FILL);
+
+    glBegin(GL_LINE);
+    glColor3f(1,0,0);
+    glVertex3f(0,0,0);
+    glVertex3f(100,0,0);
+
+    glColor3f(0,1,0);
+    glVertex3f(0,0,0);
+    glVertex3f(0,100,0);
+
+    glColor3f(0,0,1);
+    glVertex3f(0,0,0);
+    glVertex3f(0,0,100);
+    glEnd();
 
 
     glColor3f(0,0.5,1);
+    for(int j = 0; j < shape.size(); j += 3){
 
-    for(int j = 0; j < shape.getSize(); j += 3){
         glBegin(GL_TRIANGLES);
-            glVertex3f(shape.getPonto(j).getX(),shape.getPonto(j).getY(),shape.getPonto(j).getZ());
-            glVertex3f(shape.getPonto(j+1).getX(),shape.getPonto(j+1).getY(),shape.getPonto(j+1).getZ());
-            glVertex3f(shape.getPonto(j+2).getX(),shape.getPonto(j+2).getY(),shape.getPonto(j+2).getZ());
+        glColor3f(sin(j),1/tan(j),cos(j));
+        glVertex3f(shape[j].getX(),shape[j].getY(),shape[j].getZ());
+        glVertex3f(shape[j+1].getX(),shape[j+1].getY(),shape[j+1].getZ());
+        glVertex3f(shape[j+2].getX(),shape[j+2].getY(),shape[j+2].getZ());
         glEnd();
     }
 	// End of frame
@@ -120,8 +134,7 @@ int main(int argc, char** argv) {
     if(argc < 2){
         return 0;
     }
-
-    if(strcmp(argv[1],"-h")){
+    if(!strcmp(argv[1],"-h")){
         return 0;
     }
     lerXML(argv[1]);

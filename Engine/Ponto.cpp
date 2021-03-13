@@ -2,31 +2,37 @@
 
 
 Ponto::Ponto(float x, float y, float z){
-  this.x = x;
-  this.y = y;
-  this.z = z;
+  this->x = x;
+  this->y = y;
+  this->z = z;
 }
 
-Ponto::Ponto(string linha){
-  vector<string> tokens;
+Ponto::Ponto(string line){
+  /*vector<string> tokens;
   stringstream ss;
   string valor;
   while(getline(ss,valor,',')){
-    tokens.pushback(valor);
-  }
-  this.x = atof(tokens[0].c_str());
-  this.y = atof(tokens[1].c_str());
-  this.y = atof(tokens[2].c_str());
+    tokens.push_back(valor);
+  }*/
+  char *linha,*token;
+
+  linha = const_cast<char *>(line.c_str());
+  token = strtok(linha, ",");
+  this->x =atof(token);
+  token = strtok(NULL, ",");
+  this->y=atof(token);
+  token = strtok(NULL, ",");
+  this->z=atof(token);
 }
 
 float Ponto::getX(){
-  return this.x;
+  return this->x;
 }
 
 float Ponto::getY(){
-  return this.y;
+  return this->y;
 }
 
 float Ponto::getZ(){
-  return this.z;
+  return this->z;
 }

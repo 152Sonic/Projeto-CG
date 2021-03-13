@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Engine.dir/Engine/Ponto.cpp.o"
   "CMakeFiles/Engine.dir/Engine/main.cpp.o"
-  "CMakeFiles/Engine.dir/Engine/main.cpp.o.d"
+  "CMakeFiles/Engine.dir/Engine/tinyxml2.cpp.o"
   "Engine"
   "Engine.pdb"
 )

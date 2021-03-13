@@ -11,7 +11,7 @@ Ponto::Ponto(string linha){
   vector<string> tokens;
   stringstream ss;
   string valor;
-  while(getline(ss,valor,' ')){
+  while(getline(ss,valor,',')){
     tokens.pushback(valor);
   }
   this.x = atof(tokens[0].c_str());

@@ -1,3 +1,0 @@
-C:/Users/kikoc/Desktop/Universidade/CG/Projeto/Projeto-CG/build/CMakeFiles/Generate.dir
-C:/Users/kikoc/Desktop/Universidade/CG/Projeto/Projeto-CG/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/kikoc/Desktop/Universidade/CG/Projeto/Projeto-CG/build/CMakeFiles/ZERO_CHECK.dir

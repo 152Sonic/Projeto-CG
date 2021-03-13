@@ -1,8 +1,0 @@
-﻿  generate.cpp
-C:\Users\kikoc\Desktop\Universidade\CG\Projeto\Projeto-CG\Generate\generate.cpp(23,23): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\kikoc\Desktop\Universidade\CG\Projeto\Projeto-CG\Generate\generate.cpp(18,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\kikoc\Desktop\Universidade\CG\Projeto\Projeto-CG\Generate\generate.cpp(21,13): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\kikoc\Desktop\Universidade\CG\Projeto\Projeto-CG\Generate\generate.cpp(26,13): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\kikoc\Desktop\Universidade\CG\Projeto\Projeto-CG\Generate\generate.cpp(30,13): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\kikoc\Desktop\Universidade\CG\Projeto\Projeto-CG\Generate\generate.cpp(34,13): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  Generate.vcxproj -> C:\Users\kikoc\Desktop\Universidade\CG\Projeto\Projeto-CG\build\Debug\Generate.exe

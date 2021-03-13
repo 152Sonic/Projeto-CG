@@ -1,7 +1,7 @@
 #include "Shape.h"
 #include <vector>
 
-void Shape::inserePonto(Ponto* p){
+void Shape::inserePonto(Ponto p){
   this.Vertices.pushback(p);
 }
 

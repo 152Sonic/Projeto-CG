@@ -14,8 +14,7 @@ using namespace tinyxml2;
 using namespace std;
 
 
-//Shape shape;
-int linha = GL_LINE;
+
 float alpha = 0.61547999;
 float beta = 0.61547999;
 float rad = 10;
@@ -88,7 +87,7 @@ void renderScene(void) {
 
 	// set the camera
 	glLoadIdentity();
-	gluLookAt(rad*cos(beta),rad*sin(beta) , rad*cos(beta)*sin(alpha),
+	gluLookAt(rad*cos(beta)*sin(alpha),rad*sin(beta) , rad*cos(beta)*cos(alpha),
 		0.0, 0.0, 0.0,
 		0.0f, 1.0f, 0.0f);
 
@@ -109,9 +108,7 @@ void renderScene(void) {
     glEnd();
 
 
-    glColor3f(0,0.5,1);
     for(int j = 0; j < shape.size(); j += 3){
-
         glBegin(GL_TRIANGLES);
         glColor3f(sin(j),1/tan(j),cos(j));
         glVertex3f(shape[j].getX(),shape[j].getY(),shape[j].getZ());
@@ -126,7 +123,32 @@ void renderScene(void) {
 
 
 // write function to process keyboard events
-
+void keys(unsigned char c, int xx, int yy){
+    switch (c) {
+        case 'w':
+            if(beta <= M_PI/2) {
+                beta += M_PI / 64;
+            }
+            glutPostRedisplay();
+            break;
+        case 's':
+            if(beta >= -M_PI/2){
+                beta -= M_PI/64;
+            }
+            glutPostRedisplay();
+            break;
+        case 'a':
+            alpha -= M_PI/64;
+            glutPostRedisplay();
+            break;
+        case 'd':
+            alpha += M_PI/64;
+            glutPostRedisplay();
+            break;
+        default:
+            break;
+    }
+}
 
 
 
@@ -137,7 +159,10 @@ int main(int argc, char** argv) {
     if(!strcmp(argv[1],"-h")){
         return 0;
     }
-    lerXML(argv[1]);
+    char path[1024];
+    strcpy(path, "../Engine/");
+    strcat(path, argv[1]);
+    lerXML(path);
 	// init GLUT and the window
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA);
@@ -152,8 +177,8 @@ int main(int argc, char** argv) {
 	glutReshapeFunc(changeSize);
     glutIdleFunc(renderScene);
 
-
 	// put here the registration of the keyboard callbacks
+	glutKeyboardFunc(keys);
 
 
 	//  OpenGL settings

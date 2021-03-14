@@ -11,5 +11,6 @@
 using namespace std;
 
 void box(double comp, double alt, double larg, double div, string nome);
+void boxSDIV(double comp, double alt, double larg, string nome);
 
 #endif //PROJETO_CG_BOX_H

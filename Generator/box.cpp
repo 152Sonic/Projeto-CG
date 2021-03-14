@@ -107,3 +107,65 @@ void box(double comp, double alt, double larg, double div, string nome) {
     }
     file.close();
 }
+
+
+void boxSDIV(double comp, double alt, double larg, string nome) {
+
+    ofstream file(nome);
+
+    double x1,y1,z1;
+
+    x1 = comp/2;
+    y1 = -alt/2;
+    z1 = larg/2;
+
+    file << x1 << "," << y1 << "," << z1 << endl;
+    file << x1 << "," << -y1 << "," << -z1 << endl;
+    file << x1 << "," << -y1 << "," << z1 << endl;
+
+    file << x1 << "," << y1 << "," << z1 << endl;
+    file << x1 << "," << y1 << "," << -z1 << endl;
+    file << x1 << "," << -y1 << "," << -z1 << endl;
+
+    file << -x1 << "," << y1 << "," << z1 << endl;
+    file << -x1 << "," << -y1 << "," << z1 << endl;
+    file << -x1 << "," << -y1 << "," << -z1 << endl;
+
+    file << -x1 << "," << y1 << "," << z1 << endl;
+    file << -x1 << "," << -y1 << "," << -z1 << endl;
+    file << -x1 << "," << y1 << "," << -z1 << endl;
+
+    file << -x1 << "," << y1 << "," << z1 << endl;
+    file << x1 << "," << -y1 << "," << z1 << endl;
+    file << -x1 << "," << -y1 << "," << z1 << endl;
+
+    file << -x1 << "," << y1 << "," << z1 << endl;
+    file << x1 << "," << y1 << "," << z1 << endl;
+    file << x1 << "," << -y1 << "," << z1 << endl;
+
+    file << -x1 << "," << y1 << "," << -z1 << endl;
+    file << -x1 << "," << -y1 << "," << -z1 << endl;
+    file << x1 << "," << -y1 << "," << -z1 << endl;
+
+    file << -x1 << "," << y1 << "," << -z1 << endl;
+    file << x1 << "," << -y1 << "," << -z1 << endl;
+    file << x1 << "," << y1 << "," << -z1 << endl;
+
+    file << x1 << "," << -y1 << "," << z1 << endl;
+    file << x1 << "," << -y1 << "," << -z1 << endl;
+    file << -x1 << "," << -y1 << "," << -z1 << endl;
+
+    file << x1 << "," << -y1 << "," << z1 << endl;
+    file << -x1 << "," << -y1 << "," << -z1 << endl;
+    file << -x1 << "," << -y1 << "," << z1 << endl;
+
+    file << x1 << "," << y1 << "," << z1 << endl;
+    file << -x1 << "," << y1 << "," << -z1 << endl;
+    file << x1 << "," << y1 << "," << -z1 << endl;
+
+    file << x1 << "," << y1 << "," << z1 << endl;
+    file << -x1 << "," << y1 << "," << z1 << endl;
+    file << -x1 << "," << y1 << "," << -z1 << endl;
+
+    file.close();
+}

@@ -8,6 +8,13 @@ Rotate::Rotate(float angle, float x, float y, float z){
   this->z = z;
 }
 
+Rotate::Rotate(){
+  this->angle = 0;
+  this->x = 0;
+  this->y = 0;
+  this->z = 0;
+}
+
 
 float Rotate::getAngle(){
   return this->angle;

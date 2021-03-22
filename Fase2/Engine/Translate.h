@@ -1,5 +1,5 @@
-#ifndef Engine_Rotate_H
-#define Engine_Rotate_H
+#ifndef Engine_Translate_H
+#define Engine_Translate_H
 
 #include <stdio.h>
 #include <string.h>
@@ -12,24 +12,21 @@
 
 using  namespace std;
 
-class Rotate{
+class Translate{
         private:
-        float angle;
         float x;
         float y;
         float z;
 
         public:
-        Rotate();
-        Rotate (float angle, float x, float y, float z);
-        float getAngle();
+        Translate();
+        Translate (float x, float y, float z);
         float getX();
         float getY();
         float getZ();
-        void setAngle(float a);
         void setX(float a);
         void setY(float a);
         void setZ(float a);
 };
 
-#endif //Engine_Rotate_H
+#endif //Engine_Translate_H

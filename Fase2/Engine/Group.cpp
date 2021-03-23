@@ -20,5 +20,5 @@ Transformation Group::getTrans(){
 }
 
 void Group::imprime(){
-  cout << this->nome << endl;
+  cout << this->pontos[0].getY() << endl;
 }

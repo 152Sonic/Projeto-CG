@@ -95,7 +95,7 @@ void parseXMLf(XMLElement* group, vector<Group> g){
 
 }
 */
-void parseXML(XMLElement* group, vector<Group> g){
+void parseXML(XMLElement* group, vector<Group> *g){
   Rotate rotate = Rotate();
   Scale scale = Scale();
   Translate translate = Translate();
@@ -137,12 +137,13 @@ void parseXML(XMLElement* group, vector<Group> g){
     readFile(model->Attribute("file"));
     vector<Ponto> p1 = shape;
     shape.clear();
-    vector<Group> filhos = vector<Group>();
+    vector<Group> filhos;
     if (group->FirstChildElement("group")) {
-        parseXML(group->FirstChildElement("group"), filhos);
-   }
+        parseXML(group->FirstChildElement("group"), &filhos);
+    }
     Group pai = Group(model->Attribute("file"), t, filhos,p1);
-    g.push_back(pai);
+    pai.imprime();
+    g->push_back(pai);
   }
 }
 
@@ -158,7 +159,7 @@ void lerXML(string ficheiro) {
           group = group->FirstChildElement();
         }
         for(group;group;group = group->NextSiblingElement()){
-          parseXML(group, groups);
+          parseXML(group, &groups);
         }
     }
     else {
@@ -167,10 +168,12 @@ void lerXML(string ficheiro) {
 }
 
 void desenha(vector<Group> g){
+  //cout << g[0].getTrans().getScale().getX() << endl;
+  //cout << g[0].getTrans().getScale().getX() << endl;
+  //cout << g[0].getTrans().getScale().getX() << endl;
   for(int j=0; j<g.size();j++){
     glPushMatrix();
     Transformation t = g[j].getTrans();
-
     glRotatef(t.getRotate().getAngle(), t.getRotate().getX(),t.getRotate().getY(),t.getRotate().getZ());
     glTranslatef(t.getTranslate().getX(),t.getTranslate().getY(),t.getTranslate().getZ());
     glScalef(t.getScale().getX(),t.getScale().getY(),t.getScale().getZ());
@@ -185,8 +188,7 @@ void desenha(vector<Group> g){
     }
     glEnd();
 
-    while(!g[j].getFilhos().empty()){
-      cout << "entrei" << endl;
+    for(int i = 0; i<g[j].getFilhos().size(); i++){
       desenha(g[j].getFilhos());
     }
     glPopMatrix();
@@ -247,12 +249,9 @@ void renderScene(void) {
 		0.0, 0.0, 0.0,
 		0.0f, 1.0f, 0.0f);
 
-
     drawAxis();
 
-    glBegin(GL_TRIANGLES);
     desenha(groups);
-    glEnd();
 
 	// End of frame
 	glutSwapBuffers();

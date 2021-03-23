@@ -25,8 +25,8 @@ class Scale{
         float getY();
         float getZ();
         void setX(float a);
-        void setY(float a);
-        void setZ(float a);
+        void setY(float b);
+        void setZ(float c);
 };
 
 #endif //Engine_Scale_H

@@ -1,9 +1,10 @@
 #include "Transformation.h"
+#include "Rotate.h"
 
 Transformation::Transformation(){
-  this->rt = Rotate::Rotate();
-  this->sc = Scale::Scale();
-  this->tr = Translate::Translate();
+  this->rt = Rotate();
+  this->sc = Scale();
+  this->tr = Translate();
 }
 
 Transformation::Transformation(Rotate x, Scale y, Translate z){
@@ -11,3 +12,14 @@ Transformation::Transformation(Rotate x, Scale y, Translate z){
   this->sc = y;
   this->tr = z;
 }
+  Rotate Transformation::getRotate(){
+    return rt;
+  }
+
+  Scale Transformation::getScale(){
+    return sc;
+  }
+
+  Translate Transformation::getTranslate(){
+    return tr;
+  }

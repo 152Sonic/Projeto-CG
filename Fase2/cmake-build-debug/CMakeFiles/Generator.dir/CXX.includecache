@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/box.cpp
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/box.cpp
 box.h
-/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/box.h
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/box.h
 
-/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/box.h
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/box.h
 stdio.h
 -
 string.h
@@ -24,11 +24,11 @@ stdlib.h
 math.h
 -
 
-/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/cone.cpp
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/cone.cpp
 cone.h
-/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/cone.h
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/cone.h
 
-/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/cone.h
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/cone.h
 stdio.h
 -
 string.h
@@ -42,7 +42,7 @@ stdlib.h
 math.h
 -
 
-/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/generator.cpp
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/generator.cpp
 stdio.h
 -
 string.h
@@ -56,19 +56,19 @@ stdlib.h
 math.h
 -
 plano.h
-/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/plano.h
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/plano.h
 box.h
-/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/box.h
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/box.h
 cone.h
-/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/cone.h
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/cone.h
 sphere.h
-/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/sphere.h
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/sphere.h
 
-/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/plano.cpp
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/plano.cpp
 plano.h
-/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/plano.h
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/plano.h
 
-/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/plano.h
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/plano.h
 stdio.h
 -
 string.h
@@ -82,11 +82,11 @@ stdlib.h
 math.h
 -
 
-/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/sphere.cpp
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/sphere.cpp
 sphere.h
-/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/sphere.h
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/sphere.h
 
-/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/sphere.h
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/sphere.h
 stdio.h
 -
 string.h

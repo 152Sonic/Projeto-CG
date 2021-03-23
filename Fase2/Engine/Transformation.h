@@ -9,6 +9,9 @@
 #include <stdlib.h>
 #include <cstring>
 #include <vector>
+#include "Rotate.h"
+#include "Scale.h"
+#include "Translate.h"
 
 using  namespace std;
 
@@ -21,6 +24,9 @@ class Transformation{
         public:
         Transformation();
         Transformation (Rotate x, Scale y, Translate z);
+        Rotate getRotate();
+        Scale getScale();
+        Translate getTranslate();
 };
 
 #endif //Engine_Transformation_H

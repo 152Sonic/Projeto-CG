@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sonic152/3ano/CG/project/Projeto-CG/Fase1
+CMAKE_SOURCE_DIR = /home/sonic152/3ano/CG/project/Projeto-CG/Fase2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Generator.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/Generator.dir/flags.make
 
 CMakeFiles/Generator.dir/Generator/generator.cpp.o: CMakeFiles/Generator.dir/flags.make
 CMakeFiles/Generator.dir/Generator/generator.cpp.o: ../Generator/generator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Generator.dir/Generator/generator.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Generator.dir/Generator/generator.cpp.o -c /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/generator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Generator.dir/Generator/generator.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Generator.dir/Generator/generator.cpp.o -c /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/generator.cpp
 
 CMakeFiles/Generator.dir/Generator/generator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Generator.dir/Generator/generator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/generator.cpp > CMakeFiles/Generator.dir/Generator/generator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/generator.cpp > CMakeFiles/Generator.dir/Generator/generator.cpp.i
 
 CMakeFiles/Generator.dir/Generator/generator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Generator.dir/Generator/generator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/generator.cpp -o CMakeFiles/Generator.dir/Generator/generator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/generator.cpp -o CMakeFiles/Generator.dir/Generator/generator.cpp.s
 
 CMakeFiles/Generator.dir/Generator/generator.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/Generator.dir/Generator/generator.cpp.o.provides.build: CMakeFiles/Ge
 
 CMakeFiles/Generator.dir/Generator/box.cpp.o: CMakeFiles/Generator.dir/flags.make
 CMakeFiles/Generator.dir/Generator/box.cpp.o: ../Generator/box.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Generator.dir/Generator/box.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Generator.dir/Generator/box.cpp.o -c /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/box.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Generator.dir/Generator/box.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Generator.dir/Generator/box.cpp.o -c /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/box.cpp
 
 CMakeFiles/Generator.dir/Generator/box.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Generator.dir/Generator/box.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/box.cpp > CMakeFiles/Generator.dir/Generator/box.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/box.cpp > CMakeFiles/Generator.dir/Generator/box.cpp.i
 
 CMakeFiles/Generator.dir/Generator/box.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Generator.dir/Generator/box.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/box.cpp -o CMakeFiles/Generator.dir/Generator/box.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/box.cpp -o CMakeFiles/Generator.dir/Generator/box.cpp.s
 
 CMakeFiles/Generator.dir/Generator/box.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/Generator.dir/Generator/box.cpp.o.provides.build: CMakeFiles/Generato
 
 CMakeFiles/Generator.dir/Generator/cone.cpp.o: CMakeFiles/Generator.dir/flags.make
 CMakeFiles/Generator.dir/Generator/cone.cpp.o: ../Generator/cone.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Generator.dir/Generator/cone.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Generator.dir/Generator/cone.cpp.o -c /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/cone.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Generator.dir/Generator/cone.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Generator.dir/Generator/cone.cpp.o -c /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/cone.cpp
 
 CMakeFiles/Generator.dir/Generator/cone.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Generator.dir/Generator/cone.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/cone.cpp > CMakeFiles/Generator.dir/Generator/cone.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/cone.cpp > CMakeFiles/Generator.dir/Generator/cone.cpp.i
 
 CMakeFiles/Generator.dir/Generator/cone.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Generator.dir/Generator/cone.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/cone.cpp -o CMakeFiles/Generator.dir/Generator/cone.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/cone.cpp -o CMakeFiles/Generator.dir/Generator/cone.cpp.s
 
 CMakeFiles/Generator.dir/Generator/cone.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/Generator.dir/Generator/cone.cpp.o.provides.build: CMakeFiles/Generat
 
 CMakeFiles/Generator.dir/Generator/plano.cpp.o: CMakeFiles/Generator.dir/flags.make
 CMakeFiles/Generator.dir/Generator/plano.cpp.o: ../Generator/plano.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Generator.dir/Generator/plano.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Generator.dir/Generator/plano.cpp.o -c /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/plano.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Generator.dir/Generator/plano.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Generator.dir/Generator/plano.cpp.o -c /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/plano.cpp
 
 CMakeFiles/Generator.dir/Generator/plano.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Generator.dir/Generator/plano.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/plano.cpp > CMakeFiles/Generator.dir/Generator/plano.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/plano.cpp > CMakeFiles/Generator.dir/Generator/plano.cpp.i
 
 CMakeFiles/Generator.dir/Generator/plano.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Generator.dir/Generator/plano.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/plano.cpp -o CMakeFiles/Generator.dir/Generator/plano.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/plano.cpp -o CMakeFiles/Generator.dir/Generator/plano.cpp.s
 
 CMakeFiles/Generator.dir/Generator/plano.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/Generator.dir/Generator/plano.cpp.o.provides.build: CMakeFiles/Genera
 
 CMakeFiles/Generator.dir/Generator/sphere.cpp.o: CMakeFiles/Generator.dir/flags.make
 CMakeFiles/Generator.dir/Generator/sphere.cpp.o: ../Generator/sphere.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Generator.dir/Generator/sphere.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Generator.dir/Generator/sphere.cpp.o -c /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/sphere.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Generator.dir/Generator/sphere.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Generator.dir/Generator/sphere.cpp.o -c /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/sphere.cpp
 
 CMakeFiles/Generator.dir/Generator/sphere.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Generator.dir/Generator/sphere.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/sphere.cpp > CMakeFiles/Generator.dir/Generator/sphere.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/sphere.cpp > CMakeFiles/Generator.dir/Generator/sphere.cpp.i
 
 CMakeFiles/Generator.dir/Generator/sphere.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Generator.dir/Generator/sphere.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/sphere.cpp -o CMakeFiles/Generator.dir/Generator/sphere.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Generator/sphere.cpp -o CMakeFiles/Generator.dir/Generator/sphere.cpp.s
 
 CMakeFiles/Generator.dir/Generator/sphere.cpp.o.requires:
 
@@ -200,7 +200,7 @@ Generator: /usr/lib/x86_64-linux-gnu/libglut.so
 Generator: /usr/lib/x86_64-linux-gnu/libXmu.so
 Generator: /usr/lib/x86_64-linux-gnu/libXi.so
 Generator: CMakeFiles/Generator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Generator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Generator"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Generator.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -221,6 +221,6 @@ CMakeFiles/Generator.dir/clean:
 .PHONY : CMakeFiles/Generator.dir/clean
 
 CMakeFiles/Generator.dir/depend:
-	cd /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sonic152/3ano/CG/project/Projeto-CG/Fase1 /home/sonic152/3ano/CG/project/Projeto-CG/Fase1 /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/cmake-build-debug /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/cmake-build-debug /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/cmake-build-debug/CMakeFiles/Generator.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sonic152/3ano/CG/project/Projeto-CG/Fase2 /home/sonic152/3ano/CG/project/Projeto-CG/Fase2 /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles/Generator.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Generator.dir/depend
 

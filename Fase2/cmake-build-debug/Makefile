@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sonic152/3ano/CG/project/Projeto-CG/Fase1
+CMAKE_SOURCE_DIR = /home/sonic152/3ano/CG/project/Projeto-CG/Fase2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/cmake-build-debug/CMakeFiles /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -136,6 +136,33 @@ Engine/fast:
 	$(MAKE) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/build
 .PHONY : Engine/fast
 
+Engine/Group.o: Engine/Group.cpp.o
+
+.PHONY : Engine/Group.o
+
+# target to build an object file
+Engine/Group.cpp.o:
+	$(MAKE) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/Engine/Group.cpp.o
+.PHONY : Engine/Group.cpp.o
+
+Engine/Group.i: Engine/Group.cpp.i
+
+.PHONY : Engine/Group.i
+
+# target to preprocess a source file
+Engine/Group.cpp.i:
+	$(MAKE) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/Engine/Group.cpp.i
+.PHONY : Engine/Group.cpp.i
+
+Engine/Group.s: Engine/Group.cpp.s
+
+.PHONY : Engine/Group.s
+
+# target to generate assembly for a file
+Engine/Group.cpp.s:
+	$(MAKE) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/Engine/Group.cpp.s
+.PHONY : Engine/Group.cpp.s
+
 Engine/Ponto.o: Engine/Ponto.cpp.o
 
 .PHONY : Engine/Ponto.o
@@ -162,6 +189,114 @@ Engine/Ponto.s: Engine/Ponto.cpp.s
 Engine/Ponto.cpp.s:
 	$(MAKE) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/Engine/Ponto.cpp.s
 .PHONY : Engine/Ponto.cpp.s
+
+Engine/Rotate.o: Engine/Rotate.cpp.o
+
+.PHONY : Engine/Rotate.o
+
+# target to build an object file
+Engine/Rotate.cpp.o:
+	$(MAKE) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/Engine/Rotate.cpp.o
+.PHONY : Engine/Rotate.cpp.o
+
+Engine/Rotate.i: Engine/Rotate.cpp.i
+
+.PHONY : Engine/Rotate.i
+
+# target to preprocess a source file
+Engine/Rotate.cpp.i:
+	$(MAKE) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/Engine/Rotate.cpp.i
+.PHONY : Engine/Rotate.cpp.i
+
+Engine/Rotate.s: Engine/Rotate.cpp.s
+
+.PHONY : Engine/Rotate.s
+
+# target to generate assembly for a file
+Engine/Rotate.cpp.s:
+	$(MAKE) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/Engine/Rotate.cpp.s
+.PHONY : Engine/Rotate.cpp.s
+
+Engine/Scale.o: Engine/Scale.cpp.o
+
+.PHONY : Engine/Scale.o
+
+# target to build an object file
+Engine/Scale.cpp.o:
+	$(MAKE) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/Engine/Scale.cpp.o
+.PHONY : Engine/Scale.cpp.o
+
+Engine/Scale.i: Engine/Scale.cpp.i
+
+.PHONY : Engine/Scale.i
+
+# target to preprocess a source file
+Engine/Scale.cpp.i:
+	$(MAKE) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/Engine/Scale.cpp.i
+.PHONY : Engine/Scale.cpp.i
+
+Engine/Scale.s: Engine/Scale.cpp.s
+
+.PHONY : Engine/Scale.s
+
+# target to generate assembly for a file
+Engine/Scale.cpp.s:
+	$(MAKE) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/Engine/Scale.cpp.s
+.PHONY : Engine/Scale.cpp.s
+
+Engine/Transformation.o: Engine/Transformation.cpp.o
+
+.PHONY : Engine/Transformation.o
+
+# target to build an object file
+Engine/Transformation.cpp.o:
+	$(MAKE) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/Engine/Transformation.cpp.o
+.PHONY : Engine/Transformation.cpp.o
+
+Engine/Transformation.i: Engine/Transformation.cpp.i
+
+.PHONY : Engine/Transformation.i
+
+# target to preprocess a source file
+Engine/Transformation.cpp.i:
+	$(MAKE) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/Engine/Transformation.cpp.i
+.PHONY : Engine/Transformation.cpp.i
+
+Engine/Transformation.s: Engine/Transformation.cpp.s
+
+.PHONY : Engine/Transformation.s
+
+# target to generate assembly for a file
+Engine/Transformation.cpp.s:
+	$(MAKE) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/Engine/Transformation.cpp.s
+.PHONY : Engine/Transformation.cpp.s
+
+Engine/Translate.o: Engine/Translate.cpp.o
+
+.PHONY : Engine/Translate.o
+
+# target to build an object file
+Engine/Translate.cpp.o:
+	$(MAKE) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/Engine/Translate.cpp.o
+.PHONY : Engine/Translate.cpp.o
+
+Engine/Translate.i: Engine/Translate.cpp.i
+
+.PHONY : Engine/Translate.i
+
+# target to preprocess a source file
+Engine/Translate.cpp.i:
+	$(MAKE) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/Engine/Translate.cpp.i
+.PHONY : Engine/Translate.cpp.i
+
+Engine/Translate.s: Engine/Translate.cpp.s
+
+.PHONY : Engine/Translate.s
+
+# target to generate assembly for a file
+Engine/Translate.cpp.s:
+	$(MAKE) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/Engine/Translate.cpp.s
+.PHONY : Engine/Translate.cpp.s
 
 Engine/main.o: Engine/main.cpp.o
 
@@ -362,9 +497,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... Generator"
 	@echo "... Engine"
+	@echo "... Engine/Group.o"
+	@echo "... Engine/Group.i"
+	@echo "... Engine/Group.s"
 	@echo "... Engine/Ponto.o"
 	@echo "... Engine/Ponto.i"
 	@echo "... Engine/Ponto.s"
+	@echo "... Engine/Rotate.o"
+	@echo "... Engine/Rotate.i"
+	@echo "... Engine/Rotate.s"
+	@echo "... Engine/Scale.o"
+	@echo "... Engine/Scale.i"
+	@echo "... Engine/Scale.s"
+	@echo "... Engine/Transformation.o"
+	@echo "... Engine/Transformation.i"
+	@echo "... Engine/Transformation.s"
+	@echo "... Engine/Translate.o"
+	@echo "... Engine/Translate.i"
+	@echo "... Engine/Translate.s"
 	@echo "... Engine/main.o"
 	@echo "... Engine/main.i"
 	@echo "... Engine/main.s"

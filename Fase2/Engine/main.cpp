@@ -8,17 +8,18 @@
 #include <string>
 #include "tinyxml2.h"
 #include "Ponto.h"
+#include "Group.h"
 
 
 using namespace tinyxml2;
 using namespace std;
 
 
-
 float alpha = 0.61547999;
 float beta = 0.61547999;
-float rad = 10;
+float rad = 100;
 
+vector<Group> groups = vector<Group>();
 vector<Ponto> shape;
 
 void readFile(string fich) {
@@ -36,16 +37,128 @@ void readFile(string fich) {
         printf("NAO ABRIU O FICHEIRO\n");
     }
 }
+/*
+void parseXMLf(XMLElement* group, vector<Group> g){
+  Rotate rotate = Rotate();
+  Scale scale = Scale();
+  Translate translate = Translate();
+
+
+
+  for(XMLElement* elemento = group->FirstChildElement();(strcmp(elemento->Name(),"models")!=0); elemento = elemento -> NextSiblingElement()){
+      if(strcmp(elemento->Name(),"translate")==0){
+        if(elemento->Attribute("X"))
+          translate.setX(stof(elemento->Attribute("X")));
+        else if (elemento->Attribute("Y"))
+          translate.setY(stof(elemento->Attribute("Y")));
+        else if (elemento->Attribute("Z"))
+          translate.setZ(stof(elemento->Attribute("Z")));
+      }
+      if(strcmp(elemento->Name(),"rotate")==0){
+        if(elemento->Attribute("X"))
+          rotate.setX(stof(elemento->Attribute("X")));
+        else if (elemento->Attribute("Y"))
+          rotate.setY(stof(elemento->Attribute("Y")));
+        else if (elemento->Attribute("Z"))
+          rotate.setZ(stof(elemento->Attribute("Z")));
+        else if (elemento->Attribute("angle"))
+          rotate.setAngle(stof(elemento->Attribute("angle")));
+      }
+      if(strcmp(elemento->Name(),"scale")==0){
+        if(elemento->Attribute("X"))
+          scale.setX(stof(elemento->Attribute("X")));
+        else if (elemento->Attribute("Y"))
+          scale.setY(stof(elemento->Attribute("Y")));
+        else if (elemento->Attribute("Z"))
+          scale.setZ(stof(elemento->Attribute("Z")));
+      }
+
+  }
+
+  Transformation t = Transformation(rotate, scale, translate);
+
+  for(XMLElement* model = group->FirstChildElement("models")->FirstChildElement("model"); model; model= model->NextSiblingElement()){
+
+
+    readFile(model->Attribute("file"));
+    vector<Ponto> p1 = shape;
+    shape.clear();
+    vector<Group> filhos = vector<Group>();
+    if (group->FirstChildElement("group")) {
+      printf("lol\n");
+		    parseXMLf(group->FirstChildElement("group"), filhos);
+	     }
+    Group pai = Group(model->Attribute("file"), t, filhos,p1);
+    g.push_back(pai);
+
+  }
+
+}
+*/
+void parseXML(XMLElement* group, vector<Group> g){
+  Rotate rotate = Rotate();
+  Scale scale = Scale();
+  Translate translate = Translate();
+
+  for(XMLElement* elemento = group->FirstChildElement();(strcmp(elemento->Name(),"models")!=0); elemento = elemento -> NextSiblingElement()){
+      if(strcmp(elemento->Name(),"translate")==0){
+        if(elemento->Attribute("X"))
+          translate.setX(stof(elemento->Attribute("X")));
+        else if (elemento->Attribute("Y"))
+          translate.setY(stof(elemento->Attribute("Y")));
+        else if (elemento->Attribute("Z"))
+          translate.setZ(stof(elemento->Attribute("Z")));
+      }
+      if(strcmp(elemento->Name(),"rotate")==0){
+        if(elemento->Attribute("X"))
+          rotate.setX(stof(elemento->Attribute("X")));
+        else if (elemento->Attribute("Y"))
+          rotate.setY(stof(elemento->Attribute("Y")));
+        else if (elemento->Attribute("Z"))
+          rotate.setZ(stof(elemento->Attribute("Z")));
+        else if (elemento->Attribute("angle"))
+          rotate.setAngle(stof(elemento->Attribute("angle")));
+      }
+      if(strcmp(elemento->Name(),"scale")==0){
+        if(elemento->Attribute("X"))
+          scale.setX(stof(elemento->Attribute("X")));
+        else if (elemento->Attribute("Y"))
+          scale.setY(stof(elemento->Attribute("Y")));
+        else if (elemento->Attribute("Z"))
+          scale.setZ(stof(elemento->Attribute("Z")));
+      }
+
+  }
+
+  Transformation t = Transformation(rotate, scale, translate);
+
+  for(XMLElement* model = group->FirstChildElement("models")->FirstChildElement("model"); model; model= model->NextSiblingElement()){
+
+    readFile(model->Attribute("file"));
+    vector<Ponto> p1 = shape;
+    shape.clear();
+    vector<Group> filhos = vector<Group>();
+    if (group->FirstChildElement("group")) {
+        parseXML(group->FirstChildElement("group"), filhos);
+   }
+    Group pai = Group(model->Attribute("file"), t, filhos,p1);
+    g.push_back(pai);
+  }
+}
+
 
 void lerXML(string ficheiro) {
     XMLDocument docxml;
 
     if (!(docxml.LoadFile(ficheiro.c_str()))) {
         XMLElement* root = docxml.FirstChildElement();
-        for(XMLElement *elemento = root -> FirstChildElement();elemento != NULL; elemento = elemento -> NextSiblingElement()){
-            string fich = elemento -> Attribute("file");
-            cout << "Ficheiro: " << fich << " lido com sucesso " << endl;
-            readFile(fich);
+        XMLElement* group = root -> FirstChildElement();
+        //vector<Group> g = vector<Group>();
+        if(group->FirstChildElement("group")){
+          group = group->FirstChildElement();
+        }
+        for(group;group;group = group->NextSiblingElement()){
+          parseXML(group, groups);
         }
     }
     else {
@@ -53,6 +166,49 @@ void lerXML(string ficheiro) {
     }
 }
 
+void desenha(vector<Group> g){
+  for(int j=0; j<g.size();j++){
+    glPushMatrix();
+    Transformation t = g[j].getTrans();
+
+    glRotatef(t.getRotate().getAngle(), t.getRotate().getX(),t.getRotate().getY(),t.getRotate().getZ());
+    glTranslatef(t.getTranslate().getX(),t.getTranslate().getY(),t.getTranslate().getZ());
+    glScalef(t.getScale().getX(),t.getScale().getY(),t.getScale().getZ());
+    shape.clear();
+    shape = g[j].getPontos();
+    glBegin(GL_TRIANGLES);
+    glColor3f(sin(j),1/tan(j),cos(j));
+
+
+    for(int i = 0; i<shape.size(); i++){
+      glVertex3f(shape[i].getX(), shape[i].getY(), shape[i].getZ());
+    }
+    glEnd();
+
+    while(!g[j].getFilhos().empty()){
+      cout << "entrei" << endl;
+      desenha(g[j].getFilhos());
+    }
+    glPopMatrix();
+  }
+}
+
+void drawAxis(void) {
+    glBegin(GL_LINES);
+    // X axis in red
+    glColor3f(1.0f, 0.0f, 0.0f);
+    glVertex3f(0.0f, 0.0f, 0.0f);
+    glVertex3f(1000.0f, 0.0f, 0.0f);
+    // Y Axis in Green
+    glColor3f(0.0f, 1.0f, 0.0f);
+    glVertex3f(0.0f, 0.0f, 0.0f);
+    glVertex3f(0.0f, 1000.0f, 0.0f);
+    // Z Axis in Blue
+    glColor3f(0.0f, 0.0f, 1.0f);
+    glVertex3f(0.0f, 0.0f, 0.0f);
+    glVertex3f(0.0f, 0.0f, 1000.0f);
+    glEnd();
+}
 
 void changeSize(int w, int h) {
 
@@ -61,7 +217,7 @@ void changeSize(int w, int h) {
 	if (h == 0)
 		h = 1;
 
-	// compute window's aspect ratio 
+	// compute window's aspect ratio
 	float ratio = w * 1.0 / h;
 
 	// Set the projection matrix as current
@@ -91,34 +247,17 @@ void renderScene(void) {
 		0.0, 0.0, 0.0,
 		0.0f, 1.0f, 0.0f);
 
-    glPolygonMode(GL_FRONT,GL_FILL);
 
-    glBegin(GL_LINE);
-    glColor3f(1,0,0);
-    glVertex3f(0,0,0);
-    glVertex3f(100,0,0);
+    drawAxis();
 
-    glColor3f(0,1,0);
-    glVertex3f(0,0,0);
-    glVertex3f(0,100,0);
-
-    glColor3f(0,0,1);
-    glVertex3f(0,0,0);
-    glVertex3f(0,0,100);
+    glBegin(GL_TRIANGLES);
+    desenha(groups);
     glEnd();
 
-
-    for(int j = 0; j < shape.size(); j += 3){
-        glBegin(GL_TRIANGLES);
-        glColor3f(sin(j),1/tan(j),cos(j));
-        glVertex3f(shape[j].getX(),shape[j].getY(),shape[j].getZ());
-        glVertex3f(shape[j+1].getX(),shape[j+1].getY(),shape[j+1].getZ());
-        glVertex3f(shape[j+2].getX(),shape[j+2].getY(),shape[j+2].getZ());
-        glEnd();
-    }
 	// End of frame
 	glutSwapBuffers();
 }
+
 
 
 
@@ -172,7 +311,7 @@ int main(int argc, char** argv) {
 	glClearColor(0,0,0,0);
 	glClear(GL_COLOR_BUFFER_BIT);
 
-	// Required callback registry 
+	// Required callback registry
 	glutDisplayFunc(renderScene);
 	glutReshapeFunc(changeSize);
     glutIdleFunc(renderScene);

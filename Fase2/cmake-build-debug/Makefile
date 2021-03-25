@@ -163,6 +163,33 @@ Engine/Group.cpp.s:
 	$(MAKE) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/Engine/Group.cpp.s
 .PHONY : Engine/Group.cpp.s
 
+Engine/Parse.o: Engine/Parse.cpp.o
+
+.PHONY : Engine/Parse.o
+
+# target to build an object file
+Engine/Parse.cpp.o:
+	$(MAKE) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/Engine/Parse.cpp.o
+.PHONY : Engine/Parse.cpp.o
+
+Engine/Parse.i: Engine/Parse.cpp.i
+
+.PHONY : Engine/Parse.i
+
+# target to preprocess a source file
+Engine/Parse.cpp.i:
+	$(MAKE) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/Engine/Parse.cpp.i
+.PHONY : Engine/Parse.cpp.i
+
+Engine/Parse.s: Engine/Parse.cpp.s
+
+.PHONY : Engine/Parse.s
+
+# target to generate assembly for a file
+Engine/Parse.cpp.s:
+	$(MAKE) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/Engine/Parse.cpp.s
+.PHONY : Engine/Parse.cpp.s
+
 Engine/Ponto.o: Engine/Ponto.cpp.o
 
 .PHONY : Engine/Ponto.o
@@ -500,6 +527,9 @@ help:
 	@echo "... Engine/Group.o"
 	@echo "... Engine/Group.i"
 	@echo "... Engine/Group.s"
+	@echo "... Engine/Parse.o"
+	@echo "... Engine/Parse.i"
+	@echo "... Engine/Parse.s"
 	@echo "... Engine/Ponto.o"
 	@echo "... Engine/Ponto.i"
 	@echo "... Engine/Ponto.s"

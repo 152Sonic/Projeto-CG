@@ -4,9 +4,7 @@
 
 		<!-- SOL -->
 		<group>
-			<scale X="3"/>
-			<scale Y="3"/>
-			<scale Z="3"/>
+			<scale X="3" Y="3" Z="3"/>
 			<models>
 				<model file = "../3d/sphere.3d"/>
 			</models>
@@ -14,9 +12,7 @@
 
 		<!--MERCÚRIO-->
 		<group>
-			<scale X="1" />
-			<scale Y="1" />
-			<scale Z="1"/>
+			<scale X="1" Y="1" Z="1" />
 			<translate X="10.0" Y="0" Z="0"/>
 			<models>
 				<model file = "../3d/sphere.3d"/>
@@ -25,9 +21,7 @@
 
 		<!--VÉNUS-->
 		<group>
-			<scale X="1.5"/>
-			<scale Y="1.5"/>
-			<scale Z="1.5"/>
+			<scale X="1.5" Y="1.5" Z="1.5"/>
 			<translate X="20.0" Y="0" Z="0"/>
 			<models>
 				<model file = "../3d/sphere.3d"/>
@@ -36,9 +30,7 @@
 
 		<!--TERRA-->
 		<group>
-			<scale X="1.6"/>
-			<scale Y="1.6"/>
-			<scale Z="1.6"/>
+			<scale X="1.6" Y="1.6" Z="1.6"/>
 			<translate X="30.0" Y="0" Z="0"/>
 			<models>
 				<model file = "../3d/sphere.3d"/>
@@ -46,16 +38,13 @@
 
 				<!--LUA-->
 			<group>
-					<scale X="0.5"/>
-					<scale Y="0.5"/>
-					<scale Z="0.5"/>
-					<translate X="6"/>
-					<translate Y="3"/>
-					<translate Z="3"/>
+					<scale X="0.5" Y="0.5" Z="0.5"/>
+					<translate X="6" Y="3" Z="3"/>
 					<models>
 						<model file = "../3d/sphere.3d"/>
 					</models>
 			</group>
+
 		</group>
 
 		<!--MARTE-->
@@ -69,20 +58,32 @@
 
 		<!--JÚPITER-->
 		<group>
-			<scale X="0.4"/>
-			<scale Y="0.4"/>
-			<scale Z="0.4"/>
+			<scale X="2" Y="2" Z="2"/>
 			<translate X="70.0" Y="0" Z="0"/>
 			<models>
 				<model file = "../3d/sphere.3d"/>
 			</models>
+			<!--Lua1-->
+			<group>
+					<scale X="0.3" Y="0.3" Z="0.3"/>
+					<translate X="4" Y="3" Z="3"/>
+					<models>
+						<model file = "../3d/sphere.3d"/>
+					</models>
+			</group>
+			<!--Lua2-->
+			<group>
+					<scale X="0.3" Y="0.3" Z="0.3"/>
+					<translate X="3" Y="5" Z="-5"/>
+					<models>
+						<model file = "../3d/sphere.3d"/>
+					</models>
+			</group>
 		</group>
 
 		<!--SATURNO-->
 		<group>
-			<scale X="0.33"/>
-			<scale X="0.33"/>
-			<scale X="0.33"/>
+			<scale X="0.33" Y="0.33" Z="0.33"/>
 			<translate X="90.0" Y="0" Z="0"/>
 			<models>
 				<model file = "../3d/sphere.3d"/>
@@ -91,9 +92,7 @@
 
 		<!--URANO-->
 		<group>
-			<scale X="0.2"/>
-			<scale Y="0.2"/>
-			<scale Z="0.2"/>
+			<scale X="0.2" Y="0.2" Z="0.2"/>
 			<translate X="105.0" Y="0" Z="0"/>
 			<models>
 				<model file = "../3d/sphere.3d"/>
@@ -102,9 +101,7 @@
 
 		<!--NEPTUNO-->
 		<group>
-			<scale X="0.22"/>
-			<scale Y="0.22"/>
-			<scale Z="0.22"/>
+			<scale X="0.22" Y="0.22" Z="0.22"/>
 			<translate X="125.0" Y="0" Z="0"/>
 			<models>
 				<model file = "../3d/sphere.3d"/>

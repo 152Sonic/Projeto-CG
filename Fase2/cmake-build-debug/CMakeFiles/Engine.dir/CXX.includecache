@@ -32,6 +32,32 @@ Transformation.h
 Ponto.h
 /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Ponto.h
 
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Parse.cpp
+Parse.h
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Parse.h
+
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Parse.h
+stdio.h
+-
+string.h
+-
+iostream
+-
+sstream
+-
+fstream
+-
+stdlib.h
+-
+cstring
+-
+vector
+-
+tinyxml2.h
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/tinyxml2.h
+Group.h
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Group.h
+
 /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Ponto.cpp
 Ponto.h
 /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Ponto.h
@@ -167,6 +193,8 @@ Ponto.h
 /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Ponto.h
 Group.h
 /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Group.h
+Parse.h
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Parse.h
 
 /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/tinyxml2.cpp
 tinyxml2.h

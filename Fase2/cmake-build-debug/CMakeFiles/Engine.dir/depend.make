@@ -9,6 +9,16 @@ CMakeFiles/Engine.dir/Engine/Group.cpp.o: ../Engine/Scale.h
 CMakeFiles/Engine.dir/Engine/Group.cpp.o: ../Engine/Transformation.h
 CMakeFiles/Engine.dir/Engine/Group.cpp.o: ../Engine/Translate.h
 
+CMakeFiles/Engine.dir/Engine/Parse.cpp.o: ../Engine/Group.h
+CMakeFiles/Engine.dir/Engine/Parse.cpp.o: ../Engine/Parse.cpp
+CMakeFiles/Engine.dir/Engine/Parse.cpp.o: ../Engine/Parse.h
+CMakeFiles/Engine.dir/Engine/Parse.cpp.o: ../Engine/Ponto.h
+CMakeFiles/Engine.dir/Engine/Parse.cpp.o: ../Engine/Rotate.h
+CMakeFiles/Engine.dir/Engine/Parse.cpp.o: ../Engine/Scale.h
+CMakeFiles/Engine.dir/Engine/Parse.cpp.o: ../Engine/Transformation.h
+CMakeFiles/Engine.dir/Engine/Parse.cpp.o: ../Engine/Translate.h
+CMakeFiles/Engine.dir/Engine/Parse.cpp.o: ../Engine/tinyxml2.h
+
 CMakeFiles/Engine.dir/Engine/Ponto.cpp.o: ../Engine/Ponto.cpp
 CMakeFiles/Engine.dir/Engine/Ponto.cpp.o: ../Engine/Ponto.h
 
@@ -28,6 +38,7 @@ CMakeFiles/Engine.dir/Engine/Translate.cpp.o: ../Engine/Translate.cpp
 CMakeFiles/Engine.dir/Engine/Translate.cpp.o: ../Engine/Translate.h
 
 CMakeFiles/Engine.dir/Engine/main.cpp.o: ../Engine/Group.h
+CMakeFiles/Engine.dir/Engine/main.cpp.o: ../Engine/Parse.h
 CMakeFiles/Engine.dir/Engine/main.cpp.o: ../Engine/Ponto.h
 CMakeFiles/Engine.dir/Engine/main.cpp.o: ../Engine/Rotate.h
 CMakeFiles/Engine.dir/Engine/main.cpp.o: ../Engine/Scale.h

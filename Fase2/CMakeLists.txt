@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.5)
 
 # Project Name
 PROJECT(Generator)
-add_executable(${PROJECT_NAME} Generator/generator.cpp Generator/box.cpp Generator/cone.cpp Generator/plano.cpp Generator/sphere.cpp)
+add_executable(${PROJECT_NAME} Generator/generator.cpp Generator/box.cpp Generator/cone.cpp Generator/plano.cpp Generator/sphere.cpp Generator/torus.cpp)
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 

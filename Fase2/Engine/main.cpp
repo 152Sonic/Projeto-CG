@@ -15,10 +15,17 @@
 using namespace tinyxml2;
 using namespace std;
 
+float alfa = 0.0f, beta = 0.5f, radius = 100.0f;
+float camX, camY, camZ;
 
-float alpha = 0.61547999;
-float beta = 0.61547999;
-float rad = 100;
+
+void spherical2Cartesian() {
+
+        camX = radius * cos(beta) * sin(alfa);
+        camY = radius * sin(beta);
+        camZ = radius * cos(beta) * cos(alfa);
+}
+
 
 vector<Group> groups1 = vector<Group>();
 vector<Ponto> shape1;
@@ -201,7 +208,7 @@ void renderScene(void) {
 
 	// set the camera
 	glLoadIdentity();
-	gluLookAt(rad*cos(beta)*sin(alpha),rad*sin(beta) , rad*cos(beta)*cos(alpha),
+	gluLookAt(camX,camY , camZ,
 		0.0, 0.0, 0.0,
 		0.0f, 1.0f, 0.0f);
 
@@ -217,31 +224,38 @@ void renderScene(void) {
 
 
 // write function to process keyboard events
-void keys(unsigned char c, int xx, int yy){
-    switch (c) {
-        case 'w':
-            if(beta <= M_PI/2) {
-                beta += M_PI / 64;
-            }
-            glutPostRedisplay();
-            break;
-        case 's':
-            if(beta >= -M_PI/2){
-                beta -= M_PI/64;
-            }
-            glutPostRedisplay();
-            break;
-        case 'a':
-            alpha -= M_PI/64;
-            glutPostRedisplay();
-            break;
-        case 'd':
-            alpha += M_PI/64;
-            glutPostRedisplay();
-            break;
-        default:
-            break;
-    }
+void processSpecialKeys(int key, int xx, int yy) {
+
+        switch (key) {
+
+        case GLUT_KEY_RIGHT:
+                alfa -= 0.1; break;
+
+        case GLUT_KEY_LEFT:
+                alfa += 0.1; break;
+
+        case GLUT_KEY_UP:
+                beta += 0.1f;
+                if (beta > 1.5f)
+                        beta = 1.5f;
+                break;
+
+        case GLUT_KEY_DOWN:
+                beta -= 0.1f;
+                if (beta < -1.5f)
+                        beta = -1.5f;
+                break;
+
+        case GLUT_KEY_PAGE_DOWN: radius -= 1.0f;
+                if (radius < 1.0f)
+                        radius = 1.0f;
+                break;
+
+        case GLUT_KEY_PAGE_UP: radius += 1.0f; break;
+        }
+        spherical2Cartesian();
+        glutPostRedisplay();
+
 }
 
 
@@ -272,12 +286,16 @@ int main(int argc, char** argv) {
     glutIdleFunc(renderScene);
 
 	// put here the registration of the keyboard callbacks
-	glutKeyboardFunc(keys);
+	//glutKeyboardFunc(keys);
+  glutSpecialFunc(processSpecialKeys);
+
 
 
 	//  OpenGL settings
 	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_CULL_FACE);
+  spherical2Cartesian();
+
 
 	// enter GLUT's main cycle
 	glutMainLoop();

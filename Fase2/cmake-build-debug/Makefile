@@ -136,6 +136,33 @@ Engine/fast:
 	$(MAKE) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/build
 .PHONY : Engine/fast
 
+Engine/Cor.o: Engine/Cor.cpp.o
+
+.PHONY : Engine/Cor.o
+
+# target to build an object file
+Engine/Cor.cpp.o:
+	$(MAKE) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/Engine/Cor.cpp.o
+.PHONY : Engine/Cor.cpp.o
+
+Engine/Cor.i: Engine/Cor.cpp.i
+
+.PHONY : Engine/Cor.i
+
+# target to preprocess a source file
+Engine/Cor.cpp.i:
+	$(MAKE) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/Engine/Cor.cpp.i
+.PHONY : Engine/Cor.cpp.i
+
+Engine/Cor.s: Engine/Cor.cpp.s
+
+.PHONY : Engine/Cor.s
+
+# target to generate assembly for a file
+Engine/Cor.cpp.s:
+	$(MAKE) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/Engine/Cor.cpp.s
+.PHONY : Engine/Cor.cpp.s
+
 Engine/Group.o: Engine/Group.cpp.o
 
 .PHONY : Engine/Group.o
@@ -551,6 +578,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... Generator"
 	@echo "... Engine"
+	@echo "... Engine/Cor.o"
+	@echo "... Engine/Cor.i"
+	@echo "... Engine/Cor.s"
 	@echo "... Engine/Group.o"
 	@echo "... Engine/Group.i"
 	@echo "... Engine/Group.s"

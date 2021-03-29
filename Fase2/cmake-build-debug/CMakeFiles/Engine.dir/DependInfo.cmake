@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Cor.cpp" "/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles/Engine.dir/Engine/Cor.cpp.o"
   "/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Group.cpp" "/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles/Engine.dir/Engine/Group.cpp.o"
   "/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Parse.cpp" "/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles/Engine.dir/Engine/Parse.cpp.o"
   "/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Ponto.cpp" "/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles/Engine.dir/Engine/Ponto.cpp.o"

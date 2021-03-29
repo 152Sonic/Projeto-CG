@@ -12,6 +12,7 @@
 #include "Rotate.h"
 #include "Scale.h"
 #include "Translate.h"
+#include "Cor.h"
 
 using  namespace std;
 
@@ -20,13 +21,15 @@ class Transformation{
         Rotate rt;
         Scale sc;
         Translate tr;
+        Cor cor;
 
         public:
         Transformation();
-        Transformation (Rotate x, Scale y, Translate z);
+        Transformation (Rotate x, Scale y, Translate z, Cor c);
         Rotate getRotate();
         Scale getScale();
         Translate getTranslate();
+        Cor getCor();
 };
 
 #endif //Engine_Transformation_H

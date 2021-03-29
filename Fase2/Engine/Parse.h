@@ -18,6 +18,7 @@ using  namespace std;
 void parseXML(XMLElement* group, vector<Group> *g);
 void parseScale(XMLElement* elemento, Scale *scale);
 void parseRotate(XMLElement* elemento, Rotate *rotate);
+void parseCor(XMLElement* elemento, Cor *cor);
 void parseTranslate(XMLElement* elemento, Translate *translate);
 void readFile(string fich);
 vector<Group> lerXML(string ficheiro);

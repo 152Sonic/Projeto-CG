@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Generator.dir/Generator/cone.cpp.o"
   "CMakeFiles/Generator.dir/Generator/plano.cpp.o"
   "CMakeFiles/Generator.dir/Generator/sphere.cpp.o"
+  "CMakeFiles/Generator.dir/Generator/torus.cpp.o"
   "Generator.pdb"
   "Generator"
 )

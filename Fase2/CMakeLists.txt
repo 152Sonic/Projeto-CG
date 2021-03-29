@@ -51,7 +51,7 @@ else (WIN32) #Linux and Mac
 endif(WIN32)
 
 project(Engine)
-add_executable(${PROJECT_NAME} Engine/main.cpp Engine/Ponto.cpp Engine/Ponto.h Engine/tinyxml2.cpp Engine/tinyxml2.h Engine/Rotate.cpp Engine/Rotate.h Engine/Translate.cpp Engine/Translate.h Engine/Scale.cpp Engine/Scale.h Engine/Transformation.cpp Engine/Transformation.h Engine/Group.cpp Engine/Group.h Engine/Parse.cpp Engine/Parse.h)
+add_executable(${PROJECT_NAME} Engine/main.cpp Engine/Ponto.cpp Engine/Ponto.h Engine/tinyxml2.cpp Engine/tinyxml2.h Engine/Rotate.cpp Engine/Rotate.h  Engine/Cor.h Engine/Cor.cpp Engine/Translate.cpp Engine/Translate.h Engine/Scale.cpp Engine/Scale.h Engine/Transformation.cpp Engine/Transformation.h Engine/Group.cpp Engine/Group.h Engine/Parse.cpp Engine/Parse.h)
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 

@@ -32,6 +32,15 @@ void parseScale(XMLElement* elemento, Scale *scale){
     scale->setZ(stof(elemento->Attribute("Z")));
 }
 
+void parseCor(XMLElement* elemento, Cor *cor){
+  if(elemento->Attribute("R"))
+    cor->setR(stof(elemento->Attribute("R")));
+  if (elemento->Attribute("G"))
+    cor->setG(stof(elemento->Attribute("G")));
+  if (elemento->Attribute("B"))
+    cor->setB(stof(elemento->Attribute("B")));
+}
+
 void readFile(string fich) {
     ifstream file;
     file.open(fich.c_str());
@@ -52,6 +61,7 @@ void parseXML(XMLElement* group, vector<Group> *g){
   Rotate rotate = Rotate();
   Scale scale = Scale();
   Translate translate = Translate();
+  Cor cor = Cor();
 
   for(XMLElement* elemento = group->FirstChildElement();(strcmp(elemento->Name(),"models")!=0); elemento = elemento -> NextSiblingElement()){
       if(strcmp(elemento->Name(),"translate")==0){
@@ -63,9 +73,12 @@ void parseXML(XMLElement* group, vector<Group> *g){
       if(strcmp(elemento->Name(),"scale")==0){
         parseScale(elemento, &scale);
       }
+      if(strcmp(elemento->Name(),"cor")==0){
+        parseCor(elemento, &cor);
+      }
   }
 
-  Transformation t = Transformation(rotate, scale, translate);
+  Transformation t = Transformation(rotate, scale, translate, cor);
 
   for(XMLElement* model = group->FirstChildElement("models")->FirstChildElement("model"); model; model= model->NextSiblingElement()){
 

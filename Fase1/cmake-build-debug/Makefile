@@ -352,6 +352,33 @@ Generator/sphere.cpp.s:
 	$(MAKE) -f CMakeFiles/Generator.dir/build.make CMakeFiles/Generator.dir/Generator/sphere.cpp.s
 .PHONY : Generator/sphere.cpp.s
 
+Generator/torus.o: Generator/torus.cpp.o
+
+.PHONY : Generator/torus.o
+
+# target to build an object file
+Generator/torus.cpp.o:
+	$(MAKE) -f CMakeFiles/Generator.dir/build.make CMakeFiles/Generator.dir/Generator/torus.cpp.o
+.PHONY : Generator/torus.cpp.o
+
+Generator/torus.i: Generator/torus.cpp.i
+
+.PHONY : Generator/torus.i
+
+# target to preprocess a source file
+Generator/torus.cpp.i:
+	$(MAKE) -f CMakeFiles/Generator.dir/build.make CMakeFiles/Generator.dir/Generator/torus.cpp.i
+.PHONY : Generator/torus.cpp.i
+
+Generator/torus.s: Generator/torus.cpp.s
+
+.PHONY : Generator/torus.s
+
+# target to generate assembly for a file
+Generator/torus.cpp.s:
+	$(MAKE) -f CMakeFiles/Generator.dir/build.make CMakeFiles/Generator.dir/Generator/torus.cpp.s
+.PHONY : Generator/torus.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -386,6 +413,9 @@ help:
 	@echo "... Generator/sphere.o"
 	@echo "... Generator/sphere.i"
 	@echo "... Generator/sphere.s"
+	@echo "... Generator/torus.o"
+	@echo "... Generator/torus.i"
+	@echo "... Generator/torus.s"
 .PHONY : help
 
 

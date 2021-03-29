@@ -6,6 +6,28 @@
 
 #IncludeRegexTransform: 
 
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Cor.cpp
+Cor.h
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Cor.h
+
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Cor.h
+stdio.h
+-
+string.h
+-
+iostream
+-
+sstream
+-
+fstream
+-
+stdlib.h
+-
+cstring
+-
+vector
+-
+
 /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Group.cpp
 Group.h
 /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Group.h
@@ -153,6 +175,8 @@ Scale.h
 /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Scale.h
 Translate.h
 /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Translate.h
+Cor.h
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Cor.h
 
 /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Translate.cpp
 Translate.h

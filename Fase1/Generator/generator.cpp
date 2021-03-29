@@ -10,6 +10,7 @@
 #include "box.h"
 #include "cone.h"
 #include "sphere.h"
+#include "torus.h"
 
 
 void help(){
@@ -44,7 +45,7 @@ int main (int argc, char** argv){
     else if(argc > 2){
         char path[1024];
         strcpy(path, "../3d/");
-        
+
         if(strcmp(argv[1],"Plane") == 0){
             strcat(path, argv[3]);
             plano(atof(argv[2]), path);
@@ -63,6 +64,10 @@ int main (int argc, char** argv){
             strcat(path, argv[6]);
             cone(atof(argv[2]), atof(argv[3]), atof(argv[4]), atof(argv[5]), path);
         }
+        else if(strcmp(argv[1],"Torus") == 0){
+            strcat(path, argv[6]);
+            torus(atof(argv[2]), atof(argv[3]), atof(argv[4]), atof(argv[5]), path);
+          }
         else if(strcmp(argv[1],"Sphere") == 0){
             strcat(path, argv[5]);
             esfera(atof(argv[2]),atof(argv[3]),atof(argv[4]),path);
@@ -76,5 +81,3 @@ int main (int argc, char** argv){
     }
     return 0;
 }
-
-

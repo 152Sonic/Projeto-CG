@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Engine.dir/Engine/Ponto.cpp.o"
   "CMakeFiles/Engine.dir/Engine/tinyxml2.cpp.o"
   "CMakeFiles/Engine.dir/Engine/Rotate.cpp.o"
+  "CMakeFiles/Engine.dir/Engine/Cor.cpp.o"
   "CMakeFiles/Engine.dir/Engine/Translate.cpp.o"
   "CMakeFiles/Engine.dir/Engine/Scale.cpp.o"
   "CMakeFiles/Engine.dir/Engine/Transformation.cpp.o"

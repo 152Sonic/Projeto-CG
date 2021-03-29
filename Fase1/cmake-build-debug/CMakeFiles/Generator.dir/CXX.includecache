@@ -63,6 +63,8 @@ cone.h
 /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/cone.h
 sphere.h
 /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/sphere.h
+torus.h
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/torus.h
 
 /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/plano.cpp
 plano.h
@@ -87,6 +89,24 @@ sphere.h
 /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/sphere.h
 
 /home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/sphere.h
+stdio.h
+-
+string.h
+-
+iostream
+-
+fstream
+-
+stdlib.h
+-
+math.h
+-
+
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/torus.cpp
+torus.h
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/torus.h
+
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase1/Generator/torus.h
 stdio.h
 -
 string.h

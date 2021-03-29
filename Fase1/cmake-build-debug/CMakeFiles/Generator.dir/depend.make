@@ -12,10 +12,14 @@ CMakeFiles/Generator.dir/Generator/generator.cpp.o: ../Generator/cone.h
 CMakeFiles/Generator.dir/Generator/generator.cpp.o: ../Generator/generator.cpp
 CMakeFiles/Generator.dir/Generator/generator.cpp.o: ../Generator/plano.h
 CMakeFiles/Generator.dir/Generator/generator.cpp.o: ../Generator/sphere.h
+CMakeFiles/Generator.dir/Generator/generator.cpp.o: ../Generator/torus.h
 
 CMakeFiles/Generator.dir/Generator/plano.cpp.o: ../Generator/plano.cpp
 CMakeFiles/Generator.dir/Generator/plano.cpp.o: ../Generator/plano.h
 
 CMakeFiles/Generator.dir/Generator/sphere.cpp.o: ../Generator/sphere.cpp
 CMakeFiles/Generator.dir/Generator/sphere.cpp.o: ../Generator/sphere.h
+
+CMakeFiles/Generator.dir/Generator/torus.cpp.o: ../Generator/torus.cpp
+CMakeFiles/Generator.dir/Generator/torus.cpp.o: ../Generator/torus.h
 

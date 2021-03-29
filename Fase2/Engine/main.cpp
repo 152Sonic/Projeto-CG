@@ -140,10 +140,10 @@ void desenha(vector<Group> g){
     glRotatef(t.getRotate().getAngle(), t.getRotate().getX(),t.getRotate().getY(),t.getRotate().getZ());
     glTranslatef(t.getTranslate().getX(),t.getTranslate().getY(),t.getTranslate().getZ());
     glScalef(t.getScale().getX(),t.getScale().getY(),t.getScale().getZ());
+    glColor3f(t.getCor().getR(),t.getCor().getG(),t.getCor().getB());
     shape1.clear();
     shape1 = g[j].getPontos();
     glBegin(GL_TRIANGLES);
-    glColor3f(sin(j),1/tan(j),cos(j));
 
 
     for(int i = 0; i<shape1.size(); i++){
@@ -212,7 +212,6 @@ void renderScene(void) {
 		0.0, 0.0, 0.0,
 		0.0f, 1.0f, 0.0f);
 
-    drawAxis();
 
     desenha(groups1);
 

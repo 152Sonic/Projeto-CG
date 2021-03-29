@@ -153,9 +153,33 @@ CMakeFiles/Engine.dir/Engine/Rotate.cpp.o.provides: CMakeFiles/Engine.dir/Engine
 CMakeFiles/Engine.dir/Engine/Rotate.cpp.o.provides.build: CMakeFiles/Engine.dir/Engine/Rotate.cpp.o
 
 
+CMakeFiles/Engine.dir/Engine/Cor.cpp.o: CMakeFiles/Engine.dir/flags.make
+CMakeFiles/Engine.dir/Engine/Cor.cpp.o: ../Engine/Cor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Engine.dir/Engine/Cor.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Engine.dir/Engine/Cor.cpp.o -c /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Cor.cpp
+
+CMakeFiles/Engine.dir/Engine/Cor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Engine.dir/Engine/Cor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Cor.cpp > CMakeFiles/Engine.dir/Engine/Cor.cpp.i
+
+CMakeFiles/Engine.dir/Engine/Cor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/Engine/Cor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Cor.cpp -o CMakeFiles/Engine.dir/Engine/Cor.cpp.s
+
+CMakeFiles/Engine.dir/Engine/Cor.cpp.o.requires:
+
+.PHONY : CMakeFiles/Engine.dir/Engine/Cor.cpp.o.requires
+
+CMakeFiles/Engine.dir/Engine/Cor.cpp.o.provides: CMakeFiles/Engine.dir/Engine/Cor.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Engine.dir/build.make CMakeFiles/Engine.dir/Engine/Cor.cpp.o.provides.build
+.PHONY : CMakeFiles/Engine.dir/Engine/Cor.cpp.o.provides
+
+CMakeFiles/Engine.dir/Engine/Cor.cpp.o.provides.build: CMakeFiles/Engine.dir/Engine/Cor.cpp.o
+
+
 CMakeFiles/Engine.dir/Engine/Translate.cpp.o: CMakeFiles/Engine.dir/flags.make
 CMakeFiles/Engine.dir/Engine/Translate.cpp.o: ../Engine/Translate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Engine.dir/Engine/Translate.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Engine.dir/Engine/Translate.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Engine.dir/Engine/Translate.cpp.o -c /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Translate.cpp
 
 CMakeFiles/Engine.dir/Engine/Translate.cpp.i: cmake_force
@@ -179,7 +203,7 @@ CMakeFiles/Engine.dir/Engine/Translate.cpp.o.provides.build: CMakeFiles/Engine.d
 
 CMakeFiles/Engine.dir/Engine/Scale.cpp.o: CMakeFiles/Engine.dir/flags.make
 CMakeFiles/Engine.dir/Engine/Scale.cpp.o: ../Engine/Scale.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Engine.dir/Engine/Scale.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Engine.dir/Engine/Scale.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Engine.dir/Engine/Scale.cpp.o -c /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Scale.cpp
 
 CMakeFiles/Engine.dir/Engine/Scale.cpp.i: cmake_force
@@ -203,7 +227,7 @@ CMakeFiles/Engine.dir/Engine/Scale.cpp.o.provides.build: CMakeFiles/Engine.dir/E
 
 CMakeFiles/Engine.dir/Engine/Transformation.cpp.o: CMakeFiles/Engine.dir/flags.make
 CMakeFiles/Engine.dir/Engine/Transformation.cpp.o: ../Engine/Transformation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Engine.dir/Engine/Transformation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Engine.dir/Engine/Transformation.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Engine.dir/Engine/Transformation.cpp.o -c /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Transformation.cpp
 
 CMakeFiles/Engine.dir/Engine/Transformation.cpp.i: cmake_force
@@ -227,7 +251,7 @@ CMakeFiles/Engine.dir/Engine/Transformation.cpp.o.provides.build: CMakeFiles/Eng
 
 CMakeFiles/Engine.dir/Engine/Group.cpp.o: CMakeFiles/Engine.dir/flags.make
 CMakeFiles/Engine.dir/Engine/Group.cpp.o: ../Engine/Group.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Engine.dir/Engine/Group.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Engine.dir/Engine/Group.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Engine.dir/Engine/Group.cpp.o -c /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Group.cpp
 
 CMakeFiles/Engine.dir/Engine/Group.cpp.i: cmake_force
@@ -251,7 +275,7 @@ CMakeFiles/Engine.dir/Engine/Group.cpp.o.provides.build: CMakeFiles/Engine.dir/E
 
 CMakeFiles/Engine.dir/Engine/Parse.cpp.o: CMakeFiles/Engine.dir/flags.make
 CMakeFiles/Engine.dir/Engine/Parse.cpp.o: ../Engine/Parse.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Engine.dir/Engine/Parse.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Engine.dir/Engine/Parse.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Engine.dir/Engine/Parse.cpp.o -c /home/sonic152/3ano/CG/project/Projeto-CG/Fase2/Engine/Parse.cpp
 
 CMakeFiles/Engine.dir/Engine/Parse.cpp.i: cmake_force
@@ -279,6 +303,7 @@ Engine_OBJECTS = \
 "CMakeFiles/Engine.dir/Engine/Ponto.cpp.o" \
 "CMakeFiles/Engine.dir/Engine/tinyxml2.cpp.o" \
 "CMakeFiles/Engine.dir/Engine/Rotate.cpp.o" \
+"CMakeFiles/Engine.dir/Engine/Cor.cpp.o" \
 "CMakeFiles/Engine.dir/Engine/Translate.cpp.o" \
 "CMakeFiles/Engine.dir/Engine/Scale.cpp.o" \
 "CMakeFiles/Engine.dir/Engine/Transformation.cpp.o" \
@@ -292,6 +317,7 @@ Engine: CMakeFiles/Engine.dir/Engine/main.cpp.o
 Engine: CMakeFiles/Engine.dir/Engine/Ponto.cpp.o
 Engine: CMakeFiles/Engine.dir/Engine/tinyxml2.cpp.o
 Engine: CMakeFiles/Engine.dir/Engine/Rotate.cpp.o
+Engine: CMakeFiles/Engine.dir/Engine/Cor.cpp.o
 Engine: CMakeFiles/Engine.dir/Engine/Translate.cpp.o
 Engine: CMakeFiles/Engine.dir/Engine/Scale.cpp.o
 Engine: CMakeFiles/Engine.dir/Engine/Transformation.cpp.o
@@ -304,7 +330,7 @@ Engine: /usr/lib/x86_64-linux-gnu/libglut.so
 Engine: /usr/lib/x86_64-linux-gnu/libXmu.so
 Engine: /usr/lib/x86_64-linux-gnu/libXi.so
 Engine: CMakeFiles/Engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sonic152/3ano/CG/project/Projeto-CG/Fase2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Engine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Engine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -316,6 +342,7 @@ CMakeFiles/Engine.dir/requires: CMakeFiles/Engine.dir/Engine/main.cpp.o.requires
 CMakeFiles/Engine.dir/requires: CMakeFiles/Engine.dir/Engine/Ponto.cpp.o.requires
 CMakeFiles/Engine.dir/requires: CMakeFiles/Engine.dir/Engine/tinyxml2.cpp.o.requires
 CMakeFiles/Engine.dir/requires: CMakeFiles/Engine.dir/Engine/Rotate.cpp.o.requires
+CMakeFiles/Engine.dir/requires: CMakeFiles/Engine.dir/Engine/Cor.cpp.o.requires
 CMakeFiles/Engine.dir/requires: CMakeFiles/Engine.dir/Engine/Translate.cpp.o.requires
 CMakeFiles/Engine.dir/requires: CMakeFiles/Engine.dir/Engine/Scale.cpp.o.requires
 CMakeFiles/Engine.dir/requires: CMakeFiles/Engine.dir/Engine/Transformation.cpp.o.requires

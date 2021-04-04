@@ -78,6 +78,15 @@
 				</models>
 		</group>
 
+		<group>
+				<rotate angle = "90" X="1" Y="0" Z="0"/>
+				<scale X="20" Y="20" Z="0"/>
+				<cor R = "0.3" G = "0.4" B = "0.5"/>
+				<models>
+					<model file = "../3d/torus2.3d"/>
+				</models>
+		</group>
+
 		<!--MARTE-->
 		<group>
 			<scale X="0.5" Y="0.5" Z="0.5"/>
@@ -142,7 +151,8 @@
 			</models>
 			<group>
 					<cor R="0.9" G="0.8" B="0.7"/>
-					<rotate angle = "30" X="1" Y="0" Z="0"/>
+					<scale X="1" Y="1" Z="0"/>
+					<rotate angle = "90" X="1" Y="0" Z="0"/>
 					<models>
 						<model file = "../3d/torus2.3d"/>
 					</models>

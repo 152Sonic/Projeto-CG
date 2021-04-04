@@ -55,8 +55,7 @@ int main (int argc, char** argv){
                 strcat(path, argv[5]);
                 boxSDIV(atof(argv[2]), atof(argv[3]), atof(argv[4]),path);
             }
-            else {
-                strcat(path, argv[6]);
+            else { strcat(path, argv[6]);
                 box(atof(argv[2]), atof(argv[3]), atof(argv[4]), atof(argv[5]), path);
             }
         }

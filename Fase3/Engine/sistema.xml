@@ -1,0 +1,243 @@
+<scene>
+
+	<group>
+
+		<!-- SOL -->
+		<group>
+			<scale X="5" Y="5" Z="5"/>
+			<cor R="1" G="0.7" B="0"/>
+			<models>
+				<model file = "../3d/sphere.3d"/>
+			</models>
+		</group>
+
+		<!--MERCÚRIO-->
+		<group>
+			<scale X="0.3" Y="0.3" Z="0.3" />
+			<translate time = "5">
+				<ponto X="20" Y="0" Z="0"/>
+				<ponto X="14" Y="0" Z="-14"/>
+				<ponto X="0" Y="0" Z="-20"/>
+				<ponto X="-14" Y="0" Z="-14"/>
+				<ponto X="-20" Y="0" Z="0"/>
+				<ponto X="-14" Y="0" Z="14"/>
+				<ponto X="0" Y="0" Z="20"/>
+				<ponto X="14" Y="0" Z="14"/>
+			</translate>
+			<cor R="0.4" G="0.3" B="0"/>
+			<models>
+				<model file = "../3d/sphere.3d"/>
+			</models>
+		</group>
+
+
+		<!--VÉNUS-->
+		<group>
+			<scale X="0.8" Y="0.8" Z="0.8"/>
+			<translate time = "10">
+				<ponto X="40" Y="0" Z="0"/>
+				<ponto X="28" Y="0" Z="-28"/>
+				<ponto X="0" Y="0" Z="-40"/>
+				<ponto X="-28" Y="0" Z="-28"/>
+				<ponto X="-40" Y="0" Z="0"/>
+				<ponto X="-28" Y="0" Z="28"/>
+				<ponto X="0" Y="0" Z="40"/>
+				<ponto X="28" Y="0" Z="28"/>
+			</translate>
+			<cor R="1" G="0.2" B="0"/>
+			<models>
+				<model file = "../3d/sphere.3d"/>
+			</models>
+		</group>
+
+
+		<!--TERRA-->
+		<group>
+			<scale X="1" Y="1" Z="1"/>
+			<translate time = "12">
+				<ponto X="60" Y="0" Z="0"/>
+				<ponto X="42" Y="0" Z="-42"/>
+				<ponto X="0" Y="0" Z="-60"/>
+				<ponto X="-42" Y="0" Z="-42"/>
+				<ponto X="-60" Y="0" Z="0"/>
+				<ponto X="-42" Y="0" Z="42"/>
+				<ponto X="0" Y="0" Z="60"/>
+				<ponto X="42" Y="0" Z="42"/>
+			</translate>
+			<cor R="0.3" G="0" B="0.9"/>
+			<models>
+				<model file = "../3d/sphere.3d"/>
+			</models>
+
+				<!--LUA-->
+			<group>
+					<scale X="0.3" Y="0.3" Z="0.3"/>
+					<translate time = "2">
+						<ponto X="6" Y="0" Z="0"/>
+						<ponto X="4.2" Y="0" Z="-4.2"/>
+						<ponto X="0" Y="0" Z="-6"/>
+						<ponto X="-4.2" Y="0" Z="-4.2"/>
+						<ponto X="-6" Y="0" Z="0"/>
+						<ponto X="-4.2" Y="0" Z="4.2"/>
+						<ponto X="0" Y="0" Z="6"/>
+						<ponto X="4.2" Y="0" Z="4.2"/>
+					</translate>
+					<models>
+						<model file = "../3d/sphere.3d"/>
+					</models>
+			</group>
+
+		</group>
+
+
+		<group>
+				<rotate angle = "90" X="1" Y="0" Z="0"/>
+				<scale X="20" Y="20" Z="0"/>
+				<cor R = "0.3" G = "0.4" B = "0.5"/>
+				<models>
+					<model file = "../3d/torus2.3d"/>
+				</models>
+		</group>
+
+		<!--MARTE-->
+		<group>
+			<scale X="0.5" Y="0.5" Z="0.5"/>
+			<translate time = "15">
+				<ponto X="80" Y="0" Z="0"/>
+				<ponto X="56" Y="0" Z="-56"/>
+				<ponto X="0" Y="0" Z="-80"/>
+				<ponto X="-56" Y="0" Z="-56"/>
+				<ponto X="-80" Y="0" Z="0"/>
+				<ponto X="-56" Y="0" Z="56"/>
+				<ponto X="0" Y="0" Z="80"/>
+				<ponto X="56" Y="0" Z="56"/>
+			</translate>
+			<cor R="1" G="0.3" B="0"/>
+			<models>
+				<model file = "../3d/sphere.3d"/>
+			</models>
+		</group>
+
+
+		<!--JÚPITER-->
+		<group>
+			<scale X="2.5" Y="2.5" Z="2.5"/>
+			<translate time = "20">
+				<ponto X="120" Y="0" Z="0"/>
+				<ponto X="84.85" Y="0" Z="-84.85"/>
+				<ponto X="0" Y="0" Z="-120"/>
+				<ponto X="-84.85" Y="0" Z="-84.85"/>
+				<ponto X="-120" Y="0" Z="0"/>
+				<ponto X="-84.85" Y="0" Z="84.85"/>
+				<ponto X="0" Y="0" Z="120"/>
+				<ponto X="84.85" Y="0" Z="84.85"/>
+			</translate>
+			<cor R="0.6" G="0.6" B="0.5"/>
+			<models>
+				<model file = "../3d/sphere.3d"/>
+			</models>
+			<!--Lua1-->
+			<group>
+					<scale X="0.1" Y="0.1" Z="0.1"/>
+					<translate X="2" Y="3" Z="3"/>
+					<models>
+						<model file = "../3d/sphere.3d"/>
+					</models>
+			</group>
+			<!--Lua2-->
+			<group>
+					<scale X="0.1" Y="0.1" Z="0.1"/>
+					<translate X="1" Y="1" Z="-3"/>
+					<models>
+						<model file = "../3d/sphere.3d"/>
+					</models>
+			</group>
+		</group>
+
+
+		<!--SATURNO-->
+		<group>
+			<scale X="2" Y="2" Z="2"/>
+			<translate time = "23">
+				<ponto X="140" Y="0" Z="0"/>
+				<ponto X="99.0" Y="0" Z="-99.0"/>
+				<ponto X="0" Y="0" Z="-140"/>
+				<ponto X="-99.0" Y="0" Z="-99.0"/>
+				<ponto X="-140" Y="0" Z="0"/>
+				<ponto X="-99.0" Y="0" Z="99.0"/>
+				<ponto X="0" Y="0" Z="140"/>
+				<ponto X="99.0" Y="0" Z="99.0"/>
+			</translate>
+			<cor R="0.9" G="0.9" B="0.3"/>
+			<models>
+				<model file = "../3d/sphere.3d"/>
+			</models>
+			<group>
+					<cor R="0.9" G="0.8" B="0.7"/>
+					<scale X="1" Y="1" Z="0"/>
+					<rotate angle = "90" X="1" Y="0" Z="0"/>
+					<models>
+						<model file = "../3d/torus2.3d"/>
+					</models>
+			</group>
+		</group>
+
+
+		<!--URANO-->
+		<group>
+			<scale X="1.5" Y="1.5" Z="1.5"/>
+			<translate time = "28">
+				<ponto X="160" Y="0" Z="0"/>
+				<ponto X="112" Y="0" Z="-112"/>
+				<ponto X="0" Y="0" Z="-160"/>
+				<ponto X="-112" Y="0" Z="-112"/>
+				<ponto X="-160" Y="0" Z="0"/>
+				<ponto X="-112" Y="0" Z="112"/>
+				<ponto X="0" Y="0" Z="160"/>
+				<ponto X="112" Y="0" Z="112"/>
+			</translate>
+			<cor R="0.8" G="0.9" B="1"/>
+			<models>
+				<model file = "../3d/sphere.3d"/>
+			</models>
+		</group>
+
+
+		<!--NEPTUNO-->
+		<group>
+			<scale X="1.5" Y="1.5" Z="1.5"/>
+			<translate time = "30">
+				<ponto X="180" Y="0" Z="0"/>
+				<ponto X="127.28" Y="0" Z="-127.28"/>
+				<ponto X="0" Y="0" Z="-180"/>
+				<ponto X="-127.28" Y="0" Z="-127.28"/>
+				<ponto X="-180" Y="0" Z="0"/>
+				<ponto X="-127.28" Y="0" Z="127.28"/>
+				<ponto X="0" Y="0" Z="180"/>
+				<ponto X="127.28" Y="0" Z="127.28"/>
+			</translate>
+			<cor R="0.3" G="0" B="0.9"/>
+			<models>
+				<model file = "../3d/sphere.3d"/>
+			</models>
+		</group>
+
+		<group>
+			<scale X="1.5" Y="1.5" Z="1.5"/>
+			<translate time = "30">
+				<ponto X="200" Y="0" Z="0"/>
+				<ponto X="0" Y="0" Z="-200"/>
+				<ponto X="-200" Y="0" Z="0"/>
+				<ponto X="0" Y="0" Z="200"/>
+			</translate>
+			<cor R="0.3" G="0" B="0.9"/>
+			<models>
+				<model file = "../3d/teapot.3d"/>
+			</models>
+		</group>
+
+	</group>
+
+
+
+</scene>

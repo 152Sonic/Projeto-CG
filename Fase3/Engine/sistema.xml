@@ -225,12 +225,13 @@
 		<group>
 			<scale X="1.5" Y="1.5" Z="1.5"/>
 			<translate time = "30">
-				<ponto X="200" Y="0" Z="0"/>
-				<ponto X="0" Y="0" Z="-200"/>
-				<ponto X="-200" Y="0" Z="0"/>
-				<ponto X="0" Y="0" Z="200"/>
+				<ponto X="200" Y="50" Z="0"/>
+				<ponto X="100" Y="20" Z="-30"/>
+				<ponto X="-20" Y="-2.5" Z="0"/>
+				<ponto X="100" Y="20" Z="30"/>
 			</translate>
 			<cor R="0.3" G="0" B="0.9"/>
+			<rotate angle = "45" X="1" Y="0" Z="0"/>
 			<models>
 				<model file = "../3d/teapot.3d"/>
 			</models>

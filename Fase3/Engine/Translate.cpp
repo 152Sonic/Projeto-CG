@@ -74,11 +74,14 @@ void Translate::addPonto(Ponto p){
 }
 
 
-void Translate::getCatmullRomPoint(float t, Ponto p0, Ponto p1, Ponto p2, Ponto p3, float *pos) {
+
+
+void Translate::getCatmullRomPoint(float t, Ponto p0, Ponto p1, Ponto p2, Ponto p3, float *pos, float* deriv) {
 
   float ttt = pow(t,3);
   float tt = pow(t,2);
   float a[4];
+  float d[4];
   pos[0] = pos[1] = pos[2] = 0.0;
   // catmull-rom matrix
   float m[4][4] = {{-0.5f,  1.5f, -1.5f,  0.5f},
@@ -101,12 +104,21 @@ void Translate::getCatmullRomPoint(float t, Ponto p0, Ponto p1, Ponto p2, Ponto 
 
   // compute deriv = T' * A
 
+  d[0] = m[0][0]*tt*3 + m[1][0]*t*2 + m[2][0];
+  d[1] = m[0][1]*tt*3 + m[1][1]*t*2 + m[2][1];
+  d[2] = m[0][2]*tt*3 + m[1][2]*t*2 + m[2][2];
+  d[3] = m[0][3]*tt*3 + m[1][3]*t*2 + m[2][3];
+
+  deriv[0] = d[0]*p0.getX() + d[1]*p1.getX() + d[2]*p2.getX() + d[3]*p3.getX();
+  deriv[1] = d[0]*p0.getY() + d[1]*p1.getY() + d[2]*p2.getY() + d[3]*p3.getY();
+  deriv[2] = d[0]*p0.getZ() + d[1]*p1.getZ() + d[2]*p2.getZ() + d[3]*p3.getZ();
+
   // ...
 }
 
 
 // given  global t, returns the point in the curve
-void Translate::getGlobalCatmullRomPoint(float gt, float *pos) {
+void Translate::getGlobalCatmullRomPoint(float gt, float *pos, float* deriv) {
 
   int tam = pontos.size();
   float t = gt * tam; // this is the real global t
@@ -120,15 +132,17 @@ void Translate::getGlobalCatmullRomPoint(float gt, float *pos) {
   indices[2] = (indices[1]+1)%tam;
   indices[3] = (indices[2]+1)%tam;
 
-  getCatmullRomPoint(t, pontos[indices[0]], pontos[indices[1]], pontos[indices[2]], pontos[indices[3]], pos);
+  getCatmullRomPoint(t, pontos[indices[0]], pontos[indices[1]], pontos[indices[2]], pontos[indices[3]], pos, deriv);
 }
 
 void Translate::desenhaCurvas(){
   float gt;
   float pos[3];
+  float deriv[3];
 
   for(gt=0;gt<1;gt+=0.01){
-    getGlobalCatmullRomPoint(gt,pos);
+    getGlobalCatmullRomPoint(gt,pos,deriv);
+
 
     Ponto p = Ponto(pos[0],pos[1],pos[2]);
     //cout << pos[0] << "," << pos[1] << "," << pos[2] << endl;

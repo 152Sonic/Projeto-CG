@@ -38,8 +38,8 @@ class Translate{
         void setZ(float a);
         void setTime(float time);
         void addPonto(Ponto p);
-        void getCatmullRomPoint(float t, Ponto p0, Ponto p1, Ponto p2, Ponto p3, float *pos);
-        void getGlobalCatmullRomPoint(float gt, float *pos);
+        void getCatmullRomPoint(float t, Ponto p0, Ponto p1, Ponto p2, Ponto p3, float *pos,float* deriv);
+        void getGlobalCatmullRomPoint(float gt, float *pos,float* deriv);
         void desenhaCurvas();
 };
 

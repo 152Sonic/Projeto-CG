@@ -81,6 +81,7 @@ void renderCatmullRomCurve(vector<Ponto> curva){
 
   int tam = curva.size();
   int i;
+  glColor3f(1,1,1);
 
   glBegin(GL_LINE_LOOP);
   for(i=0;i<tam;i++ ){
@@ -94,12 +95,12 @@ void direction(float* deriv, float*y, float*z, float* m){
   normalize(deriv);
 
   cross(deriv,y,z);
-  cross(z,deriv,y);
-
-  normalize(y);
   normalize(z);
+  cross(z,deriv,y);
+  normalize(y);
 
   buildRotMatrix(deriv,y,z,m);
+
   glMultMatrixf(m);
 }
 
@@ -117,7 +118,6 @@ void desenha(vector<Group> g){
     if(tl.getTime()>0){
         float r = glutGet(GLUT_ELAPSED_TIME) % (int)(tl.getTime() * 1000);
 				float gt = (float) r / (tl.getTime() * 1000);
-				tl.desenhaCurvas();
 				renderCatmullRomCurve(tl.getCurva());
 				tl.getGlobalCatmullRomPoint(gt,res,deriv);
 				glTranslatef(res[0],res[1],res[2]);
@@ -134,18 +134,10 @@ void desenha(vector<Group> g){
     else{
     glRotatef(t.getRotate().getAngle(), t.getRotate().getX(),t.getRotate().getY(),t.getRotate().getZ());
   }
+
     glScalef(t.getScale().getX(),t.getScale().getY(),t.getScale().getZ());
     glColor3f(t.getCor().getR(),t.getCor().getG(),t.getCor().getB());
-    /*shape1.clear();
-    shape1 = g[j].getPontos();
-    glBegin(GL_TRIANGLES);
 
-
-    for(int i = 0; i<shape1.size(); i++){
-      glVertex3f(shape1[i].getX(), shape1[i].getY(), shape1[i].getZ());
-    }
-    glEnd();*/
-    //g[j].prep();
     g[j].draw();
 
     if(g[j].getFilhos().size()!=0){
@@ -228,6 +220,7 @@ void renderScene(void) {
 		0.0, 0.0, 0.0,
 		0.0f, 1.0f, 0.0f);
 
+    glPolygonMode(GL_FRONT_AND_BACK,GL_LINE);
     desenha(groups1);
     fps();
 

@@ -76,6 +76,7 @@ void parseXML(XMLElement* group, vector<Group> *g){
             translate.addPonto(p);
           }
         }
+        translate.desenhaCurvas();
       }
       else{
         parseTranslate(elemento, &translate);
@@ -93,6 +94,8 @@ void parseXML(XMLElement* group, vector<Group> *g){
   }
 
   Transformation t = Transformation(rotate, scale, translate, cor);
+
+
 
   for(XMLElement* model = group->FirstChildElement("models")->FirstChildElement("model"); model; model= model->NextSiblingElement()){
 

@@ -5,6 +5,7 @@
 		<!-- SOL -->
 		<group>
 			<scale X="5" Y="5" Z="5"/>
+			<rotate time="10" X="0" Y="1" Z="0"/>
 			<cor R="1" G="0.7" B="0"/>
 			<models>
 				<model file = "../3d/sphere.3d"/>
@@ -54,6 +55,7 @@
 		<!--TERRA-->
 		<group>
 			<scale X="1" Y="1" Z="1"/>
+
 			<translate time = "12">
 				<ponto X="60" Y="0" Z="0"/>
 				<ponto X="42" Y="0" Z="-42"/>
@@ -64,6 +66,7 @@
 				<ponto X="0" Y="0" Z="60"/>
 				<ponto X="42" Y="0" Z="42"/>
 			</translate>
+			<rotate time ="10" X="0" Y="1" Z="0"/>
 			<cor R="0.3" G="0" B="0.9"/>
 			<models>
 				<model file = "../3d/sphere.3d"/>
@@ -72,7 +75,7 @@
 				<!--LUA-->
 			<group>
 					<scale X="0.3" Y="0.3" Z="0.3"/>
-					<translate time = "2">
+					<translate time = "3">
 						<ponto X="6" Y="0" Z="0"/>
 						<ponto X="4.2" Y="0" Z="-4.2"/>
 						<ponto X="0" Y="0" Z="-6"/>
@@ -91,7 +94,17 @@
 
 
 		<group>
-				<rotate angle = "90" X="1" Y="0" Z="0"/>
+				<rotate angle ="90" X="1" Y="0" Z="0"/>
+				<translate time = "20">
+					<ponto X="1" Y="0" Z="0"/>
+					<ponto X="0.7" Y="0" Z="-0.7"/>
+					<ponto X="0" Y="0" Z="-1"/>
+					<ponto X="-0.7" Y="0" Z="-0.7"/>
+					<ponto X="-1" Y="0" Z="0"/>
+					<ponto X="-0.7" Y="0" Z="0.7"/>
+					<ponto X="0" Y="0" Z="1"/>
+					<ponto X="0.7" Y="0" Z="0.7"/>
+				</translate>
 				<scale X="20" Y="20" Z="0"/>
 				<cor R = "0.3" G = "0.4" B = "0.5"/>
 				<models>
@@ -223,15 +236,26 @@
 		</group>
 
 		<group>
-			<scale X="1.5" Y="1.5" Z="1.5"/>
+			<scale X="0.1" Y="0.1" Z="0.1"/>
 			<translate time = "30">
-				<ponto X="200" Y="50" Z="0"/>
-				<ponto X="100" Y="20" Z="-30"/>
-				<ponto X="-20" Y="-2.5" Z="0"/>
-				<ponto X="100" Y="20" Z="30"/>
+				<point X="50" Y="30" Z="-230" />
+					<ponto X="46.194" Y="20" Z="-134.329" />
+					<ponto X="35.3553" Y="10" Z="-53.2233" />
+					<ponto X="19.1342" Y="0" Z="0.969883" />
+					<ponto X="0" Y="-2" Z="20" />
+					<ponto X="-19.1342" Y="0" Z="0.969883" />
+					<ponto X="-35.3553" Y="10" Z="-53.2233" />
+					<ponto X="-46.194" Y="20" Z="-134.329" />
+					<ponto X="-50" Y="30" Z="-230" />
+					<ponto X="-46.194" Y="40" Z="-325.671" />
+					<ponto X="-35.3553" Y="50" Z="-406.777" />
+					<ponto X="-19.1342" Y="60" Z="-460.97" />
+					<ponto X="-0" Y="65" Z="-480" />
+					<ponto X="19.1342" Y="60" Z="-460.97" />
+					<ponto X="35.3553" Y="50" Z="-406.777" />
+					<ponto X="46.194" Y="40" Z="-325.671" />
 			</translate>
 			<cor R="0.3" G="0" B="0.9"/>
-			<rotate angle = "45" X="1" Y="0" Z="0"/>
 			<models>
 				<model file = "../3d/teapot.3d"/>
 			</models>

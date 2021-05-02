@@ -142,8 +142,6 @@ void Translate::desenhaCurvas(){
 
   for(gt=0;gt<1;gt+=0.01){
     getGlobalCatmullRomPoint(gt,pos,deriv);
-
-
     Ponto p = Ponto(pos[0],pos[1],pos[2]);
     //cout << pos[0] << "," << pos[1] << "," << pos[2] << endl;
     curva.push_back(p);

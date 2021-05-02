@@ -253,6 +253,8 @@
 			</models>
 		</group>
 
+		<!--Cometa-->
+
 		<group>
 			<scale X="0.1" Y="0.1" Z="0.1"/>
 			<translate time = "30">

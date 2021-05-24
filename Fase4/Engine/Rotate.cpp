@@ -1,0 +1,59 @@
+#include "Rotate.h"
+
+
+Rotate::Rotate(float angle, float x, float y, float z){
+  this->angle = angle;
+  this->x = x;
+  this->y = y;
+  this->z = z;
+  this->time = 0;
+}
+
+Rotate::Rotate(){
+  this->angle = 0;
+  this->x = 0;
+  this->y = 0;
+  this->z = 0;
+  this->time =0;
+}
+
+
+float Rotate::getAngle(){
+  return this->angle;
+}
+
+float Rotate::getTime(){
+  return this->time;
+}
+
+float Rotate::getX(){
+  return this->x;
+}
+
+float Rotate::getY(){
+  return this->y;
+}
+
+float Rotate::getZ(){
+  return this->z;
+}
+
+void Rotate::setAngle(float a){
+  this->angle = a;
+}
+
+void Rotate::setTime(float a){
+  this->time = a;
+}
+
+void Rotate::setX(float x){
+  this->x = x;
+}
+
+void Rotate::setY(float y){
+  this->y = y;
+}
+
+void Rotate::setZ(float z){
+  this->z = z;
+}

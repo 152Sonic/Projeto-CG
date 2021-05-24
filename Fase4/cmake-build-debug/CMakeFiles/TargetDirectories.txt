@@ -1,0 +1,4 @@
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase4/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase4/cmake-build-debug/CMakeFiles/Generator.dir
+/home/sonic152/3ano/CG/project/Projeto-CG/Fase4/cmake-build-debug/CMakeFiles/Engine.dir

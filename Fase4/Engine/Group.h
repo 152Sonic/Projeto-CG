@@ -42,7 +42,8 @@ class Group{
 
         public:
         Group(string n, Transformation tf, vector<Group> g, vector<Ponto> p);
-        Group(string nome, Transformation tf,string te, vector<Group> g, vector<Ponto> p, vector<Ponto> n, vector<Ponto> t);
+        Group(string nome, Transformation tf,string te, vector<Group> g, vector<Ponto> p,
+	      vector<Ponto> n, vector<Ponto> t);
         void setTextura(string t);
         string getTextura();
         unsigned int getTexID();

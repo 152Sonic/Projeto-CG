@@ -7,7 +7,8 @@ Group::Group(string n, Transformation tf, vector<Group> g, vector<Ponto> p){
   this->pontos = p;
 }
 
-Group::Group(string nome, Transformation tf,string te, vector<Group> g, vector<Ponto> p, vector<Ponto> n, vector<Ponto> t){
+Group::Group(string nome, Transformation tf,string te, vector<Group> g, vector<Ponto> p, 
+	     vector<Ponto> n, vector<Ponto> t){
   this->nome = nome;
   this->t = tf;
   this->textura = te;
